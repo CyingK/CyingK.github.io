@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+
+  
+
+  
+    <meta name="author" content="Cying-承影">
+  
+
+  
+
+  
+
+  <title>Struts2 | Cying</title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/default.min.css" rel="stylesheet">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div class="root-container">
+    <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Cying
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">HOME</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">ABOUT</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">LINK</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags">TAGS</a></li>
+        
+          <li class="navbar-list-item"><a href="/categories">CATEGORIES</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<!-- header container -->
+<header class="header-container post">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-image" style="background-image: url(https://www.w3cschool.cn/attachments/image/20161214/1481678654127827.jpg)"></div>
+      <div class="post-text">
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/Frame/">Frame</a>
+        </div>
+        <h1 class="title-wrap">Struts2</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Cying-承影</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2020-01-31T17:27:42.000Z" itemprop="datePublished">2020-02-01</time>
+  </a>
+
+        </h2>
+      </div>
+    </div>
+  
+
+  
+  
+
+  </header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <h1 style="
+           font-size: 60px;
+           font-weight: bolder;
+           border: none;
+           "><center>Struts</center></h1>
+
+
+
+<h1 id="一、Struts2-概述"><a href="#一、Struts2-概述" class="headerlink" title="一、Struts2 概述"></a>一、Struts2 概述</h1><blockquote>
+<ul>
+<li>应用于 <code>JavaEE</code> 三层结构中 <code>web</code> 层框架</li>
+<li><code>Struts2</code> 框架是在 <code>Struts1</code> 和 <code>WebWork</code> 基础之上发展的全新框架</li>
+<li>有一个过滤器，根据不同的操作，在类里面写不同的方法</li>
+</ul>
+</blockquote>
+<h2 id="1-1-简单案例"><a href="#1-1-简单案例" class="headerlink" title="1.1 - 简单案例"></a>1.1 - 简单案例</h2><h3 id="1-1-1-引入-Jar-包"><a href="#1-1-1-引入-Jar-包" class="headerlink" title="1.1.1 - 引入 Jar 包"></a>1.1.1 - 引入 Jar 包</h3><blockquote>
+<ul>
+<li><code>asm-7.1.jar</code></li>
+<li><code>asm-commons-7.1.jar</code></li>
+<li><code>asm-tree-7.1.jar</code></li>
+<li><code>commons-fileupload-1.4.jar</code></li>
+<li><code>commons-io-2.6.jar</code></li>
+<li><code>commons-lang3-3.8.1.jar</code></li>
+<li><code>freemarker-2.3.28.jar</code></li>
+<li><code>javassist-3.20.0-GA.jar</code></li>
+<li><code>log4j-api-2.12.1.jar</code></li>
+<li><code>log4j-core-2.12.1.jar</code></li>
+<li><code>ognl-3.1.26.jar</code></li>
+<li><code>struts2-core-2.5.22.jar</code></li>
+</ul>
+</blockquote>
+<h3 id="1-1-2-新建-struts-xml"><a href="#1-1-2-新建-struts-xml" class="headerlink" title="1.1.2 - 新建 struts.xml"></a>1.1.2 - 新建 struts.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">struts</span> <span class="meta-keyword">PUBLIC</span></span></span><br><span class="line"><span class="meta">  <span class="meta-string">"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"</span></span></span><br><span class="line"><span class="meta">  <span class="meta-string">"http://struts.apache.org/dtds/struts-2.5.dtd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">- struts.xml 文件位置固定在 src 文件夹</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-1-3-配置-action"><a href="#1-1-3-配置-action" class="headerlink" title="1.1.3 - 配置 action"></a>1.1.3 - 配置 action</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">struts</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">"···"</span> <span class="attr">extends</span>=<span class="string">"struts-default"</span> <span class="attr">namespace</span>=<span class="string">"/···"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">action</span> <span class="attr">name</span>=<span class="string">"···"</span> <span class="attr">class</span>=<span class="string">"Java 文件全路径"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">result</span> <span class="attr">name</span>=<span class="string">"ok"</span>&gt;</span><span class="tag">&lt;/<span class="name">result</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">action</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">package</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">struts</span>&gt;</span></span><br><span class="line"></span><br><span class="line">- 在 struts.xml 文件中进行</span><br><span class="line">- 访问的基本路径相同的 action 放在同一个 package 中</span><br><span class="line">- package 的 extends 属性是固定的 struts-default</span><br><span class="line">- 外部的访问路径由 package 的 namespace 和 action 的 name 构成</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-1-4-配置-filter"><a href="#1-1-4-配置-filter" class="headerlink" title="1.1.4 - 配置 filter"></a>1.1.4 - 配置 filter</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  <span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>struts2<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>struts2<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line"></span><br><span class="line">- 在 web.xml 文件中进行</span><br><span class="line">- filter 中的类容固定</span><br><span class="line">- filter-mapping 中配置要用到的 filter 和 要处理的路径</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-1-5-书写-Java-文件"><a href="#1-1-5-书写-Java-文件" class="headerlink" title="1.1.5 - 书写 Java 文件"></a>1.1.5 - 书写 Java 文件</h3><blockquote>
+<p><code>Java</code> 文件要重写以下方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> 返回类型 execute() &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h2 id="1-2-过滤器"><a href="#1-2-过滤器" class="headerlink" title="1.2 - 过滤器"></a>1.2 - 过滤器</h2><blockquote>
+<ul>
+<li><p>外来请求首先会被汇总到过滤器</p>
+</li>
+<li><p>过滤器在服务器启动时创建，执行 <code>init</code> 方法</p>
+</li>
+<li><p>过滤器要做的事</p>
+<ul>
+<li><p>过滤器会获取请求路径</p>
+</li>
+<li><p>截取请求路径中的有效字符串</p>
+</li>
+<li><p>到 <code>src</code> 下面找到 <code>struts.xml</code> 使用 <code>dom4j</code> 进行解析</p>
+</li>
+<li><p>用截取到的字符串与 <code>struts.xml</code> 中的 <code>action</code> 进行匹配</p>
+</li>
+<li><p>如果匹配到对应的 <code>action</code> 则根据其中的全路径，反射创建对应 <code>Java</code> 类</p>
+<ul>
+<li><p>反射：</p>
+</li>
+<li><pre><code class="java">Class clazz = Class.forName(<span class="string">"全路径"</span>);
+<span class="comment">// 反射创建类</span>
+Method m = clazz.getMethod(<span class="string">"execute"</span>);
+<span class="comment">// 获取方法</span>
+Object obj = m.invoke();
+<span class="comment">// 方法执行并获取返回值</span>
+&lt;!--￼<span class="number">4</span>--&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>将返回值与该 <code>action</code> 中的 <code>result</code> 进行匹配</p>
+<ul>
+<li>如果匹配成功，则跳转到相应页面<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 1.2.1 - init()</span><br><span class="line"></span><br><span class="line">加载自己创建的配置文件和 &#96;struts2&#96; 自带配置文件</span><br><span class="line"></span><br><span class="line">### 1.2.2 - doFilter()</span><br><span class="line"></span><br><span class="line">**request &#x3D; warpRequest(request);**</span><br><span class="line"></span><br><span class="line">增强</span><br><span class="line"></span><br><span class="line">## 1.3 - struts.xml</span><br><span class="line"></span><br><span class="line">### 1.3.1 - &lt;package\&gt;</span><br><span class="line"></span><br><span class="line">类似于代码包，用于区分不同的 &#96;action&#96; ，必须首先写 &#96;package&#96; 标签，在 &#96;package&#96; 标签中才能配置 &#96;action&#96;，在一个 &#96;package&#96; 中可以有多个 &#96;action&#96;</span><br><span class="line"></span><br><span class="line">#### - name</span><br><span class="line"></span><br><span class="line">和功能本身没有任何关系，只要重复，可以随便取</span><br><span class="line"></span><br><span class="line">#### - extends</span><br><span class="line"></span><br><span class="line">属性值是固定的，写了这个属性之后，在 &#96;package&#96; 中配置的 &#96;action&#96; 才具有 &#96;action&#96; 该有的功能</span><br><span class="line"></span><br><span class="line">#### - namespace</span><br><span class="line"></span><br><span class="line">要和 &#96;action&#96; 标签的 &#96;name&#96; 构成访问路径，默认值是 &#96;&#x2F;&#96;</span><br><span class="line"></span><br><span class="line">### 1.3.2 - &lt;action\&gt;</span><br><span class="line"></span><br><span class="line">配置 &#96;action&#96; 的访问路径及 &#96;Java&#96; 文件的绑定</span><br><span class="line"></span><br><span class="line">#### - name</span><br><span class="line"></span><br><span class="line">要和 &#96;package&#96; 标签的 &#96;name&#96; 构成访问路径</span><br><span class="line"></span><br><span class="line">可以用通配符 ***** 进行匹配</span><br><span class="line"></span><br><span class="line">#### - class</span><br><span class="line"></span><br><span class="line">&#96;action&#96; 所绑定 &#96;Java&#96; 文件的全路径</span><br><span class="line"></span><br><span class="line">#### - method</span><br><span class="line"></span><br><span class="line">指定执行 &#96;Java&#96; 文件中的哪一个方法</span><br><span class="line"></span><br><span class="line">在通配符模式下，用 &#96;&#123;1&#125;&#96; 来获取方法，获取到的方法名即 ***** 所代替的字符串</span><br><span class="line"></span><br><span class="line">#### - action 的另外两种编写方式</span><br><span class="line"></span><br><span class="line">- &#96;implements Action&#96;</span><br><span class="line">- &#96;extends ActionSupport&#96;</span><br><span class="line"></span><br><span class="line">### 1.3.3 - &lt;result\&gt;</span><br><span class="line"></span><br><span class="line">根据 &#96;action&#96; 方法返回值，配置到不同的路径</span><br><span class="line"></span><br><span class="line">#### - name</span><br><span class="line"></span><br><span class="line">和 &#96;action&#96; 返回值一样</span><br><span class="line"></span><br><span class="line">#### - type</span><br><span class="line"></span><br><span class="line">指定如何到达配置路径的方法</span><br><span class="line"></span><br><span class="line">- &#96;dispatcher&#96; 请求转发，默认</span><br><span class="line">- &#96;redirect&#96; 重定向</span><br><span class="line">- &#96;chain&#96; 转发到 &#96;action&#96;</span><br><span class="line">- &#96;redirectAction&#96; 重定向到 &#96;Action&#96;</span><br><span class="line"></span><br><span class="line">### 1.3.4 - &lt;constant\&gt;</span><br><span class="line"></span><br><span class="line">#### - name</span><br><span class="line"></span><br><span class="line">#### - value</span><br><span class="line"></span><br><span class="line">另外两种常量修改方式</span><br><span class="line"></span><br><span class="line">- 在 &#96;src&#96; 下创建 &#96;struts.properties&#96; </span><br><span class="line">- 在 &#96;web.xml&#96; 配置</span><br><span class="line"></span><br><span class="line">### 1.3.5 - &lt;include\&gt;</span><br><span class="line"></span><br><span class="line">####  - file</span><br><span class="line"></span><br><span class="line">文件路径</span><br><span class="line"></span><br><span class="line">### 1.3.6 - &lt;global-results\&gt;</span><br><span class="line"></span><br><span class="line">当有多个 &#96;action&#96; 返回值相同、且其 &#96;result&#96; 返回的内容也相同，则可以使用这个</span><br><span class="line"></span><br><span class="line"># 二、数据处理</span><br><span class="line"></span><br><span class="line">## 2.1 - 使用 ActionContext 类</span><br><span class="line"></span><br><span class="line">- 需要创建 &#96;ActionContext&#96; 对象</span><br><span class="line">- 不是 &#96;new&#96; 出来的</span><br><span class="line"></span><br><span class="line">## 2.2 - 使用 ServletActionContext 类</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">## 2.3 - 使用 Interface 注入</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;java</span><br><span class="line">public class A implements ServletRequestAware &#123;</span><br><span class="line"> </span><br><span class="line"> private HttpServletRequest request;</span><br><span class="line"> </span><br><span class="line"> public void setServletRequest(HttpServletRequest request) &#123;</span><br><span class="line">   this.request &#x3D; request;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="三、数据封装"><a href="#三、数据封装" class="headerlink" title="三、数据封装"></a>三、数据封装</h1><h2 id="3-1-属性驱动"><a href="#3-1-属性驱动" class="headerlink" title="3.1 - 属性驱动"></a>3.1 - 属性驱动</h2><blockquote>
+<ul>
+<li>直接把表单提交属性封装到 <code>action</code> 属性</li>
+<li>实现步骤<ul>
+<li>在 <code>action</code> 成员变量位置定义变量 – 变量名和表单输入项的 <code>name</code> 属性值一样</li>
+<li>生成变量的 <code>setter</code> 和 <code>getter</code>  </li>
+</ul>
+</li>
+<li>使用属性封装获取表单数据到属性里面，不能把数据直接封装到实体类</li>
+</ul>
+</blockquote>
+<h2 id="3-2-模型驱动"><a href="#3-2-模型驱动" class="headerlink" title="3.2 - 模型驱动"></a>3.2 - 模型驱动</h2><blockquote>
+<ul>
+<li><p>使用模型驱动方式，可以直接把表单数据封装到实体类对象里面</p>
+</li>
+<li><p>实现步骤</p>
+<ul>
+<li><p><code>action</code> 实现接口 <code>ModelDriven</code> </p>
+</li>
+<li><p>实现接口里的方法 <code>getModel</code> </p>
+</li>
+<li><p>在 <code>action</code> 里创建实体类对象</p>
+</li>
+<li><p>```java<br>public class A extends ActionSupport implements ModelDriven &lt;类型&gt; {</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">  private 类型 a &#x3D; new 类型();</span><br><span class="line"></span><br><span class="line">  public 类型 getModel() &#123;</span><br><span class="line"></span><br><span class="line">    return a;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>属性驱动和模型封装不能同时使用，如果同时使用，只会执行模型封装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## 3.3 - 表达式封装</span><br><span class="line"></span><br><span class="line">- 实现过程</span><br><span class="line">  - 使用表达式封装可以把表单数据封装到实体类对象里面</span><br><span class="line">  - 在 &#96;action&#96; 里面声明实体类</span><br><span class="line">  - 生成实体类的 &#96;setter&#96; 和 &#96;getter&#96; 方法</span><br><span class="line"></span><br><span class="line"># 四、Ognl 概述</span><br><span class="line"></span><br><span class="line">- &#96;EL&#96; 表达式：在 &#96;JSP&#96; 中获取域对象里面的值</span><br><span class="line">- &#96;Ognl&#96; 表达式：在 &#96;Struts2&#96; 实现值栈数据</span><br><span class="line">  - 一般把 &#96;Ognl&#96; 在 &#96;Struts2&#96; 里操作，和 &#96;Struts2&#96; 标签一起使用操作值栈</span><br><span class="line">  - 不是 &#96;Struts2&#96; 的一部分，只是经常和 &#96;Struts2&#96; 一起使用</span><br><span class="line"></span><br><span class="line">## 4.1 - 获取值栈对象</span><br><span class="line"></span><br><span class="line">### 4.1.1 - 常用方式</span><br><span class="line"></span><br><span class="line">使用 &#96;ActionContext&#96; 类里面的方法得到值栈对象</span><br><span class="line"></span><br><span class="line">- 获取 &#96;ActionContext&#96; 对象</span><br><span class="line">  - &#96;ActionContext context &#x3D; ActionContext.getContext();&#96;</span><br><span class="line">- 调用方法得到值栈对象</span><br><span class="line">  - &#96;ValueStack stack &#x3D; context.getValueStack();&#96;</span><br><span class="line"></span><br><span class="line">## 4.2 - 值栈内部结构</span><br><span class="line"></span><br><span class="line">### 4.2.1 - 第一部分：root</span><br><span class="line"></span><br><span class="line">- 结构是 &#96;List&#96; 集合</span><br><span class="line">- 一般操作的都是 &#96;root&#96; 里的数据</span><br><span class="line"></span><br><span class="line">### 4.2.2 - 第二部分： context</span><br><span class="line"></span><br><span class="line">- 结构是 &#96;Map&#96; 集合</span><br><span class="line">- 很少操作</span><br><span class="line">- 几个键值对</span><br><span class="line">  - &#96;request&#96;：&#96;request&#96; 引用</span><br><span class="line">  - &#96;session&#96;：&#96;HttpSession&#96; 引用</span><br><span class="line">  - &#96;application&#96;： &#96;ServletContext&#96; 引用</span><br><span class="line">  - &#96;parameters&#96;：传递相关参数</span><br><span class="line">  - &#96;attr&#96;： 获取域对象</span><br><span class="line"></span><br><span class="line">## 4.3 - 向值栈放数据</span><br><span class="line"></span><br><span class="line">**调用 set()**</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;java</span><br><span class="line">ActionContext context &#x3D; ActionContext.getContext();</span><br><span class="line"></span><br><span class="line">ValueStack stack &#x3D; context.getValueStack();</span><br><span class="line"></span><br><span class="line">stack.set(&quot;key&quot;, &quot;value&quot;); </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<p><strong>调用 push()</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ActionContext context = ActionContext.getContext();</span><br><span class="line"></span><br><span class="line">ValueStack stack = context.getValueStack();</span><br><span class="line"></span><br><span class="line">stack.put(<span class="string">""</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>生成 get()</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-1-向值栈放对象"><a href="#4-3-1-向值栈放对象" class="headerlink" title="4.3.1 - 向值栈放对象"></a>4.3.1 - 向值栈放对象</h3><blockquote>
+<ul>
+<li>定义对象变量</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> User user = <span class="keyword">new</span> User();</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>生成变量的 <code>get</code> 方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line"> <span class="keyword">return</span> user;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在执行的方法里面向对象中设置值</li>
+</ul>
+</blockquote>
+<h3 id="4-3-2-向值栈放-List-对象"><a href="#4-3-2-向值栈放-List-对象" class="headerlink" title="4.3.2 - 向值栈放 List 对象"></a>4.3.2 - 向值栈放 List 对象</h3><blockquote>
+<ul>
+<li>定义 <code>List</code> 集合</li>
+<li>生成变量的 <code>getter</code> </li>
+<li>在执行的方法里面向 <code>List</code> 集合设置值</li>
+</ul>
+</blockquote>
+<h2 id="4-4-从值栈获取数据"><a href="#4-4-从值栈获取数据" class="headerlink" title="4.4 - 从值栈获取数据"></a>4.4 - 从值栈获取数据</h2><blockquote>
+<ul>
+<li>使用 <code>Struts2</code> 的标签 + <code>Ognl</code> 表达式获取值栈数据<ul>
+<li><code>&lt;s:property value=&quot;Ognl 表达式&quot;/&gt;</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="4-4-1-获取字符串"><a href="#4-4-1-获取字符串" class="headerlink" title="4.4.1 - 获取字符串"></a>4.4.1 - 获取字符串</h3><p><strong>action</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">ActionSupport</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> String 变量名;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> String get变量名() &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> 变量名;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">execute</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    </span><br><span class="line">    变量名 = <span class="string">""</span>;</span><br><span class="line">    <span class="keyword">return</span> SUCCESS;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>struts.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">action</span> <span class="attr">name</span>=<span class="string">"自定义名称"</span> <span class="attr">class</span>=<span class="string">"action 全路径"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">result</span> <span class="attr">name</span>=<span class="string">"success"</span>&gt;</span>/返回的 jsp<span class="tag">&lt;/<span class="name">result</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>jsp</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"变量名"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-4-2-获取对象"><a href="#4-4-2-获取对象" class="headerlink" title="4.4.2 - 获取对象"></a>4.4.2 - 获取对象</h3><p><strong>action</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">ActionSupport</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">private</span> 类名 对象;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> String get对象() &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> 对象;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">execute</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    </span><br><span class="line">    对象.属性 = <span class="string">"···"</span>;</span><br><span class="line">    ···</span><br><span class="line">    对象.属性 = <span class="string">"···"</span>;</span><br><span class="line">    <span class="keyword">return</span> SUCCESS;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>struts.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">action</span> <span class="attr">name</span>=<span class="string">"自定义名称"</span> <span class="attr">class</span>=<span class="string">"action 全路径"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">result</span> <span class="attr">name</span>=<span class="string">"success"</span>&gt;</span>/返回的 jsp<span class="tag">&lt;/<span class="name">result</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>jsp</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"对象.属性"</span>/&gt;</span><br><span class="line">···</span><br><span class="line">&lt;s:property value=<span class="string">"对象.属性"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-4-3-获取-List-对象"><a href="#4-4-3-获取-List-对象" class="headerlink" title="4.4.3 - 获取 List 对象"></a>4.4.3 - 获取 List 对象</h3><p><strong>action</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">ActionSupport</span></span>&#123;</span><br><span class="line">  </span><br><span class="line">  List&lt;类型&gt; list = <span class="keyword">new</span> List();</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">execute</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    类型 对象<span class="number">1</span> = <span class="keyword">new</span> 类型();</span><br><span class="line">    对象<span class="number">1</span>.属性 = <span class="string">"···"</span>;</span><br><span class="line">    ···</span><br><span class="line">    对象<span class="number">1</span>.属性 = <span class="string">"···"</span>;  </span><br><span class="line">    </span><br><span class="line">    类型 对象<span class="number">2</span> = <span class="keyword">new</span> 类型();</span><br><span class="line">    对象<span class="number">2</span>.属性 = <span class="string">"···"</span>;</span><br><span class="line">    ···</span><br><span class="line">    对象<span class="number">2</span>.属性 = <span class="string">"···"</span>;  </span><br><span class="line">    </span><br><span class="line">    list.add(对象<span class="number">1</span>);</span><br><span class="line">    list.add(对象<span class="number">2</span>);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> SUCCESS;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>struts.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">action</span> <span class="attr">name</span>=<span class="string">"自定义名称"</span> <span class="attr">class</span>=<span class="string">"action 全路径"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">result</span> <span class="attr">name</span>=<span class="string">"success"</span>&gt;</span>/返回的 jsp<span class="tag">&lt;/<span class="name">result</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>jsp</strong></p>
+<p><strong>第一种方式</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"list[0].属性"</span>/&gt;</span><br><span class="line">···</span><br><span class="line">&lt;s:property value=<span class="string">"list[0].属性"</span>/&gt;</span><br><span class="line"></span><br><span class="line">&lt;s:property value=<span class="string">"list[1].属性"</span>/&gt;</span><br><span class="line">···</span><br><span class="line">&lt;s:property value=<span class="string">"list[1].属性"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>第二种方式</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:iterator value=<span class="string">"list"</span>&gt;</span><br><span class="line">	&lt;s:property value=<span class="string">"属性"</span>/&gt;</span><br><span class="line">  ···</span><br><span class="line">	&lt;s:property value=<span class="string">"属性"</span>/&gt;</span><br><span class="line">&lt;/s:iterator&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong>第三种方式</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:iterator value=<span class="string">"list"</span> <span class="keyword">var</span>=<span class="string">"自定义名称"</span>&gt;</span><br><span class="line">	&lt;s:property value=<span class="string">"#自定义名称.属性"</span>/&gt;</span><br><span class="line">  ···</span><br><span class="line">	&lt;s:property value=<span class="string">"#自定义名称.属性"</span>/&gt;</span><br><span class="line">&lt;/s:iterator&gt;</span><br><span class="line">  </span><br><span class="line">- var 会被临时放入 context,需要使用特殊符号 `#` 才能取到</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-4-4-其他操作"><a href="#4-4-4-其他操作" class="headerlink" title="4.4.4 - 其他操作"></a>4.4.4 - 其他操作</h3><h4 id="获取-setter-方法存放的数据"><a href="#获取-setter-方法存放的数据" class="headerlink" title="- 获取 setter 方法存放的数据"></a>- 获取 setter 方法存放的数据</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"栈的key"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="获取-push-方法存放的数据"><a href="#获取-push-方法存放的数据" class="headerlink" title="- 获取 push 方法存放的数据"></a>- 获取 push 方法存放的数据</h4><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"[下标].top"</span>/&gt;</span><br><span class="line"></span><br><span class="line">- 因为 push 进栈的没有名字，默认存放在 top 数组</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-5-两种符号的使用"><a href="#4-5-两种符号的使用" class="headerlink" title="4.5 - 两种符号的使用"></a>4.5 - 两种符号的使用</h2><h3 id="4-5-1"><a href="#4-5-1" class="headerlink" title="4.5.1 -"></a>4.5.1 -</h3><p><strong>先在 action 向域中添加对象</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">execute</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">  </span><br><span class="line">  HttpServletRequest request = ServletActionContext.getRequest();</span><br><span class="line">  request.setAttribute(key, value);</span><br><span class="line">  <span class="keyword">return</span> SUCCESS;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>struts.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">action</span> <span class="attr">name</span>=<span class="string">"自定义名称"</span> <span class="attr">class</span>=<span class="string">"action 全路径"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">result</span> <span class="attr">name</span>=<span class="string">"success"</span>&gt;</span>/返回的 jsp<span class="tag">&lt;/<span class="name">result</span>&gt;</span></span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">action</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>jsp</strong></p>
+<figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=<span class="string">"#context域的key.域对象名称"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-5-2"><a href="#4-5-2" class="headerlink" title="4.5.2 - %"></a>4.5.2 - %</h3><blockquote>
+<p>在 <code>struts2</code> 标签里使用 <code>Ognl</code> 表达式，如果直接在 <code>struts2</code> 表单标签里面使用 <code>Ognl</code> 表达式不识别，只有 % 之后才会识别</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:textfield name="" value=%&#123;#context域的key.域对象名称&#125;&gt;&lt;/s:textfield&gt;</span><br></pre></td></tr></table></figure>
+
+<h1 id="五、拦截器"><a href="#五、拦截器" class="headerlink" title="五、拦截器"></a>五、拦截器</h1><h2 id="5-1-概述"><a href="#5-1-概述" class="headerlink" title="5.1 - 概述"></a>5.1 - 概述</h2><blockquote>
+<ul>
+<li><code>struts2</code> 是框架，封装了很多功能，<code>struts2</code> 里面封装的功能都是在拦截器里面</li>
+<li><code>struts2</code> 里面封装了很多的功能，又很多拦截器，不是每次这些拦截器都执行，每次执行默认的拦截器</li>
+<li>默认拦截器位置：<code>struts2-core-version.jar/struts-default.xml</code></li>
+<li>在 <code>action</code> 创建之后，执行之前调用</li>
+</ul>
+</blockquote>
+<h2 id="5-2-底层原理"><a href="#5-2-底层原理" class="headerlink" title="5.2 - 底层原理"></a>5.2 - 底层原理</h2><p><strong>两大思想</strong></p>
+<blockquote>
+<ul>
+<li><code>Aop</code> 思想</li>
+<li>职责链设计模式<ul>
+<li>要执行多个操作，有添加、修改、删除</li>
+<li>首先执行添加操作，添加之后执行修改操作，最后执行删除操作</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><strong>通过 AOP 将拦截器加入到执行过程</strong></p>
+<h2 id="5-3-重要的概念"><a href="#5-3-重要的概念" class="headerlink" title="5.3 - 重要的概念"></a>5.3 - 重要的概念</h2><h3 id="5-3-1-过滤器和拦截器"><a href="#5-3-1-过滤器和拦截器" class="headerlink" title="5.3.1 - 过滤器和拦截器"></a>5.3.1 - 过滤器和拦截器</h3><blockquote>
+<ul>
+<li>过滤器：理论上可以拦截任意内容</li>
+<li>拦截器：只可以拦截 <code>action</code></li>
+</ul>
+</blockquote>
+<h3 id="5-3-2-Servlet-和-action"><a href="#5-3-2-Servlet-和-action" class="headerlink" title="5.3.2 - Servlet 和 action"></a>5.3.2 - Servlet 和 action</h3><blockquote>
+<ul>
+<li><code>servlet</code> 默认第一次访问时创建，创建一次，单实例对象</li>
+<li><code>action</code> 每次访问时创建，创建多次，多实例对象 </li>
+</ul>
+</blockquote>
+<h2 id="5-4-自定义拦截器"><a href="#5-4-自定义拦截器" class="headerlink" title="5.4 - 自定义拦截器"></a>5.4 - 自定义拦截器</h2><h3 id="5-4-1-继承类"><a href="#5-4-1-继承类" class="headerlink" title="5.4.1 - 继承类"></a>5.4.1 - 继承类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">AbstractInterceptor</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 而</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">AbstractInterceptor</span> <span class="keyword">implements</span> <span class="title">Interceptor</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- 工作中推荐下面</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> <span class="keyword">extends</span> <span class="title">MethodFilterInterceptor</span> </span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="function"><span class="keyword">protected</span> String <span class="title">doIntercept</span><span class="params">(ActionInvocation invocation)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-4-2-重写方法"><a href="#5-4-2-重写方法" class="headerlink" title="5.4.2 - 重写方法"></a>5.4.2 - 重写方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function">String <span class="title">intercept</span><span class="params">(ActionInvocation invocation)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-4-3-建立关系"><a href="#5-4-3-建立关系" class="headerlink" title="5.4.3 - 建立关系"></a>5.4.3 - 建立关系</h3><blockquote>
+<ul>
+<li>在要拦截的 <code>action</code> 标签所在的 <code>package</code> 标签里面声明拦截器</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">interceptors</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">interceptor</span> <span class="attr">name</span>=<span class="string">"自定义name"</span> <span class="attr">class</span>=<span class="string">"拦截器java文件全路径"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">interceptors</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在具体的 <code>action</code> 标签里面使用声明的拦截器</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">interceptor-ref</span> <span class="attr">name</span>=<span class="string">"上面的自定义name"</span>/&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>如果在 <code>struts.xml</code> 中使用自定义的，则默认拦截器不会执行</p>
+<ul>
+<li>解决方法：手动引入默认拦截器</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">interceptor-ref</span> <span class="attr">name</span>=<span class="string">"paramsPrepareParamsStack"</span>/&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>自定义拦截器会对 <code>action</code> 里所有方法都拦截</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="5-4-4-放不拦截某些方法"><a href="#5-4-4-放不拦截某些方法" class="headerlink" title="5.4.4 - 放不拦截某些方法"></a>5.4.4 - 放不拦截某些方法</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">interceptor-ref</span> <span class="attr">name</span>=<span class="string">"上面的自定义name"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">param</span> <span class="attr">name</span>=<span class="string">"excludeMethods"</span>&gt;</span>写方法名，多个用逗号隔开<span class="tag">&lt;/<span class="name">param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">interceptor-ref</span>&gt;</span></span><br></pre></td></tr></table></figure>
+      </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaEE/" rel="tag">#JavaEE</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+      <div id="article-nav-newer" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(https://img-blog.csdnimg.cn/20191214203032844.png)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/02/07/Vuforia/"></a>
+          <strong class="article-nav-caption">Newer</strong>
+          <p class="article-nav-title">
+            
+              Vuforia
+            
+          </p>
+        </article>
+      </div>
+    
+    
+      <div id="article-nav-older" class="card-item img">
+        <article>
+          
+            <div class="card-cover" style="background-image: url(https://img-blog.csdnimg.cn/2019060217174520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3pob3V5bV8=,size_16,color_FFFFFF,t_70)"></div>
+          
+          <a class="card-link article-nav-link" href="/2020/01/31/Http-Servlet/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              Http Servlet
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2020 <a href="/" target="_blank">Cying-承影</a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  
+<link rel="stylesheet" href="/lib/APlayer.min.css">
+
+  
+<script src="/lib/APlayer.min.js"></script>
+
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+
+<link rel="stylesheet" href="/lib/DPlayer.min.css">
+
+
+<script src="/lib/DPlayer.min.js"></script>
+
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      new DPlayer({
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      });
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+
+<script src="/lib/waterfall.min.js"></script>
+
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  
+<script src="/lib/zoom.min.js"></script>
+
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+
+</body>
+</html>
