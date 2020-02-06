@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  
+
+  
+
+  
+    <meta name="author" content="Cying-承影">
+  
+
+  
+
+  
+
+  <title>JDBC | Cying</title>
+
+  
+
+  
+    <link rel="icon" href="/favicon.ico">
+  
+
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.15.6/styles/default.min.css" rel="stylesheet">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body>
+  <div class="root-container">
+    <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          Cying
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">HOME</a></li>
+        
+          <li class="navbar-list-item"><a href="/about">ABOUT</a></li>
+        
+          <li class="navbar-list-item"><a href="/links">LINK</a></li>
+        
+          <li class="navbar-list-item"><a href="/tags">TAGS</a></li>
+        
+          <li class="navbar-list-item"><a href="/categories">CATEGORIES</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<!-- header container -->
+<header class="header-container post">
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-image" style="background-image: url(https://5b0988e595225.cdn.sohucs.com/images/20190831/84729f5c5bb346208416445feb485df6.jpeg)"></div>
+      <div class="post-text">
+        <div class="type-wrap">
+          <a class="article-category-link" href="/categories/Skill/">Skill</a>
+        </div>
+        <h1 class="title-wrap">JDBC</h1>
+        <h2 class="title-sub-wrap">
+          <strong>Cying-承影</strong>
+          <span>发布于</span>
+          
+  <a href="javascript:;" class="article-date">
+    <time datetime="2019-12-12T17:04:19.000Z" itemprop="datePublished">2019-12-13</time>
+  </a>
+
+        </h2>
+      </div>
+    </div>
+  
+
+  
+  
+
+  </header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+
+<div class="body-container">
+  <article class="content-container article-container">
+    <div class="article-content">
+      
+      
+
+      <div class="article-entry">
+        <p><img src="https://img-blog.csdnimg.cn/20191213203223906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0N5aW5nSw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<center><h1>Cying, What's Mean JDBC</h1></center>
+
+<hr>
+<blockquote>
+<p><strong>JDBC</strong> - (<strong>Java Database Connectivity</strong>)，是用于将 <strong>MySQL</strong> 连接到 <strong>Java</strong> 工程的开源 <strong>API</strong></p>
+</blockquote>
+<h3 id="JDBC-主要结构"><a href="#JDBC-主要结构" class="headerlink" title="JDBC 主要结构"></a>JDBC 主要结构</h3><blockquote>
+<ul>
+<li><code>DriveManager</code> - 作为链接到数据库的驱动存在 [好比移动/联通/电信]</li>
+<li><code>Connection</code> - 是 <strong>Java</strong> 与 <strong>MySQL</strong> 的会话连接 [好比一次拨号成功]</li>
+<li><code>PrepareStatement</code> - 是 <strong>Java</strong> 向 <strong>MySQL</strong> 发出的请求 [<strong>Java</strong> 告诉 <strong>MySQL</strong> 要干嘛]</li>
+<li><code>ResultSet</code> - <strong>MySQL</strong> 向 <strong>Java</strong> 返回的结果</li>
+</ul>
+</blockquote>
+<h3 id="1-配置好驱动-DriverManager"><a href="#1-配置好驱动-DriverManager" class="headerlink" title="1.配置好驱动 DriverManager"></a>1.配置好驱动 <code>DriverManager</code></h3><ul>
+<li>点击下载 <a href="https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.48.zip" target="_blank" rel="noopener"><code>JDBC</code></a> 驱动器</li>
+<li>解压后，在 <code>Java</code> 项目中引入 <code>mysql-connector-java-版本号.jar</code><br><br><img src="https://img-blog.csdnimg.cn/2019121321451754.png#pic_center" alt="在这里插入图片描述"></li>
+</ul>
+<hr>
+<h3 id="2-封装一个-DriveManager"><a href="#2-封装一个-DriveManager" class="headerlink" title="2.封装一个 DriveManager"></a>2.封装一个 DriveManager</h3><blockquote>
+<p>因为每次注册驱动的方法都是一样的，无非就是用户 <strong>MySQL</strong> 的用户名、密码、要连接的数据库名，其中只有一个 <strong>要连接的数据库名</strong> 会不一样，所以我们一般把注册驱动封装成一个独立的 <strong>X.Java</strong> 文件</p>
+</blockquote>
+<blockquote>
+<p>如下所示，在 <strong>X.Java</strong> (名字随意，我这里是<strong>ConnectToMySQL.java</strong>) 中有一个 <strong>getConnection</strong> 的方法，返回的类型为 <strong>Connection</strong> </p>
+<ul>
+<li>返回的是 <strong>DriverManager.getConnection();</strong> ，其中有三个参数，一个分别是 <strong>URL</strong>，<strong>UserName</strong>，<strong>PassWord</strong></li>
+<li><strong>UserName</strong> 和 <strong>PassWord</strong> 记得改成自己的数据库账号、密码</li>
+<li><strong>URL</strong> 是数据库的连接地址，格式是固定的，只有中间的数据库名有变动，所以 <strong>URL</strong> 采用的字符串拼接方式，在拼接的时候就把传过来的数据库名加进去。</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DriverManager;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConnectToMySQL</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> String username = <span class="string">"****"</span>;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> String password = <span class="string">"****"</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">(String dataBaseName)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line"></span><br><span class="line">    String url = <span class="string">"jdbc:mysql://localhost:3306/"</span> + dataBaseName + <span class="string">"?useSSL=false&amp;serverTimezone=UTC&amp;charset=utf8"</span>;</span><br><span class="line">    <span class="keyword">return</span> DriverManager.getConnection(url,username,password);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3-测试连接"><a href="#3-测试连接" class="headerlink" title="3.测试连接"></a>3.测试连接</h3><blockquote>
+<ul>
+<li>声明 <strong>Connection</strong></li>
+<li>声明 <strong>PreparedStatement</strong></li>
+<li>根据封装的 <strong>ConnectToMySQL</strong> 获取会话连接 <strong>connection</strong></li>
+<li>对会话传输指令 <strong>preparedStatement</strong></li>
+<li>执行 <strong>preparedStatement</strong> 的指令</li>
+<li>关闭 <strong>Connection</strong> 和 <strong>PreparedStatement</strong>，先打开的后关闭，后打开的先关闭</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.PreparedStatement;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">T_JDBC</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">static</span> Connection connection = <span class="keyword">null</span>;</span><br><span class="line">  <span class="keyword">static</span> PreparedStatement pStatement = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line"></span><br><span class="line">    connection = ConnectToMySQL.getConnection(<span class="string">"T_JDBC"</span>);  <span class="comment">// 连接数据库 T_JDBC</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 下面两句是查询部分，具体查询代码在 doQuery 方法中</span></span><br><span class="line">    System.out.printf(<span class="string">"第一次查询："</span>);</span><br><span class="line">    doQuery(<span class="string">"SELECT * FROM USER"</span>);  </span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    跳转至 doQuery()，并把 "SELECT * FROM USER" 传过去</span></span><br><span class="line"><span class="comment">    User 是我在数据库 T_JDBC 中新建的表，有 </span></span><br><span class="line"><span class="comment">    NAME VARCHAR(20)</span></span><br><span class="line"><span class="comment">    ID VARCHAR(20) </span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 下面四句是向数据库中写入数据</span></span><br><span class="line">    pStatement = connection.prepareStatement(<span class="string">"INSERT INTO USER VALUES (?,?)"</span>);  </span><br><span class="line">    <span class="comment">/* </span></span><br><span class="line"><span class="comment">    向 USER 表中添加数据，数据暂时用 ? 代替，避免出现 bug</span></span><br><span class="line"><span class="comment">    这里有几个 ? 是根据要修改的额表的字段具体情况来定</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    pStatement.setString(<span class="number">1</span>, <span class="string">"Kevin"</span>);  <span class="comment">// 设置第一个 ? 的值</span></span><br><span class="line">    pStatement.setString(<span class="number">2</span>, <span class="string">"2019****"</span>);  <span class="comment">// 设置第二个 ? 的值</span></span><br><span class="line">    pStatement.executeUpdate();  <span class="comment">// 执行更新</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">// 下面两句是查询部分，具体查询代码在 doQuery 方法中</span></span><br><span class="line">    System.out.printf(<span class="string">"第二次查询："</span>);  </span><br><span class="line">    doQuery(<span class="string">"SELECT * FROM USER"</span>);  </span><br><span class="line"></span><br><span class="line">    pStatement.close();</span><br><span class="line">    connection.close();   </span><br><span class="line">    <span class="comment">// 关闭 - 关闭顺序为从最后打开的，关到最开始打开的</span></span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">doQuery</span><span class="params">(String query)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line"></span><br><span class="line">    pStatement = connection.prepareStatement(query);  <span class="comment">// 告诉会话 connection 要准备执行 query，其中 query 中存放的是传递过来的指令</span></span><br><span class="line">    ResultSet rSet = pStatement.executeQuery();  <span class="comment">// pStatement.executeQuery()是执行查询，这样就能的到查询的结果了，然后把结果放到 rSet 中</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(rSet.next())&#123;  <span class="comment">// 遍历 rSet ，每个 rSet.next() 跳一行，而且第一次取值之前必须执行一次 rSet,next()，否则报错</span></span><br><span class="line">      String records = rSet.getString(<span class="number">1</span>) + <span class="string">"    \t"</span> + rSet.getString(<span class="number">2</span>);  <span class="comment">// rSet.getString 中放表的某个字段的序号</span></span><br><span class="line">      System.out.println(records);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<center><h2>运行结果如下所示</h2></center>
+
+<p><img src="https://img-blog.csdnimg.cn/20191213223729506.png#pic_center" alt="在这里插入图片描述"></p>
+<hr>
+<center><h2>数据库情况如下所示</h2></center>
+
+<p><img src="https://img-blog.csdnimg.cn/2019121322414471.png#pic_center" alt="在这里插入图片描述"></p>
+<hr>
+<center><h1 style="border: 1px solid grey">Finish</h1></center>
+
+<hr>
+
+      </div>
+
+      <div class="article-footer">
+        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">#Java</a></li></ul>
+      </div>
+
+      <div class="article-navs">
+        
+<nav class="card-container card-article-nav">
+  <div class="card-wrap">
+    
+    
+      <div id="article-nav-older" class="card-item">
+        <article>
+          
+          <a class="card-link article-nav-link" href="/2019/12/12/Init-Vue/"></a>
+          <strong class="article-nav-caption">Older</strong>
+          <p class="article-nav-title">
+            
+              Init Vue
+            
+          </p>
+        </article>
+      </div>
+    
+  </div>
+</nav>
+
+      </div>
+      
+      
+
+  
+  <div class="valine-container">
+    <div id="valine_thread" class="valine-thread"></div>
+  </div>
+
+  
+  
+
+
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <p>&copy; 2020 <a href="/" target="_blank">Cying-承影</a></p>
+
+    
+      <p id="hitokoto"></p>
+      <script src="https://v1.hitokoto.cn/?c=a&amp;encode=js&select=%23hitokoto" defer></script>
+    
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank">flex-block</a></p>
+  </div>
+</footer>
+  </div>
+
+  
+  
+
+
+  <!-- aplayer 音频 start -->
+  
+<link rel="stylesheet" href="/lib/APlayer.min.css">
+
+  
+<script src="/lib/APlayer.min.js"></script>
+
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        new APlayer({
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          lrcType: 3,
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        });
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+<!-- dplayer 视频 start -->
+
+<link rel="stylesheet" href="/lib/DPlayer.min.css">
+
+
+<script src="/lib/DPlayer.min.js"></script>
+
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let cover = el.dataset.cover;
+      new DPlayer({
+        container: el,
+        video: { url: url, pic: cover },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      });
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
+
+<!-- waterfall 瀑布流 start -->
+
+<script src="/lib/waterfall.min.js"></script>
+
+<script type="text/javascript">
+
+const waterfalls = document.querySelectorAll(".waterfall-container");
+
+if (waterfalls && waterfalls.length > 0) {
+  waterfalls.forEach((waterfall, index) => {
+    let cls = "waterfall-container-" + index;
+    waterfall.classList.add(cls);
+    initWaterfall(cls, waterfall);
+  });
+}
+
+function initWaterfall(selector, el) {
+  const options = {};
+  if (Object.keys(el.dataset).length > 0) {
+    for (let k in el.dataset) {
+      options[k] = el.dataset[k];
+    }
+  }
+  waterfall(`.${selector}`, options);
+}
+</script>
+<!-- waterfall 瀑布流 end -->
+
+
+  <!-- zoom start -->
+  
+<script src="/lib/zoom.min.js"></script>
+
+  <script type="text/javascript">
+    document.querySelector(".article-content") && zoom(".article-content");
+  </script>
+  <!-- zoom end -->
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+
+</body>
+</html>
