@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Gossip | Cying</title><meta name="description" content="Gossip"><meta name="keywords" content="Daily"><meta name="author" content="Cying-承影"><meta name="copyright" content="Cying-承影"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Gossip"><meta name="twitter:description" content="Gossip"><meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020031523402253.jpg"><meta property="og:type" content="article"><meta property="og:title" content="Gossip"><meta property="og:url" content="http://cyingk.github.io/2020/03/15/Gossip/"><meta property="og:site_name" content="Cying"><meta property="og:description" content="Gossip"><meta property="og:image" content="https://img-blog.csdnimg.cn/2020031523402253.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="http://cyingk.github.io/2020/03/15/Gossip/"><link rel="next" title="UML" href="http://cyingk.github.io/2020/02/26/UML/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://narpro.top/","msgToTraditionalChinese":"简","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: true,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"Press","message_next":"to bookmark this page"},"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Light Mode Activated Manually","night_to_day":"Dark Mode Activated Manually","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Cying</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div></div></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">15</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">3</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#寒假计划"><span class="toc_mobile_items-text">寒假计划</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#计算机网络"><span class="toc_mobile_items-text">计算机网络</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#数据结构"><span class="toc_mobile_items-text">数据结构</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#汇编语言"><span class="toc_mobile_items-text">汇编语言</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Java-设计模式"><span class="toc_mobile_items-text">Java 设计模式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Servlet"><span class="toc_mobile_items-text">Servlet</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#SSH"><span class="toc_mobile_items-text">SSH</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#SSM"><span class="toc_mobile_items-text">SSM</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#SpringBoot"><span class="toc_mobile_items-text">SpringBoot</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#最近都在忙啥"><span class="toc_mobile_items-text">最近都在忙啥</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#女生节"><span class="toc_mobile_items-text">女生节</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#项目任务"><span class="toc_mobile_items-text">项目任务</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#项目申报"><span class="toc_mobile_items-text">项目申报</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#春招面试"><span class="toc_mobile_items-text">春招面试</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#面试感受"><span class="toc_mobile_items-text">面试感受</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#百度学长的指导"><span class="toc_mobile_items-text">百度学长的指导</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#腾讯面试总结"><span class="toc_mobile_items-text">腾讯面试总结</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#字节面试总结"><span class="toc_mobile_items-text">字节面试总结</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#寒假计划"><span class="toc-text">寒假计划</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机网络"><span class="toc-text">计算机网络</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据结构"><span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#汇编语言"><span class="toc-text">汇编语言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-设计模式"><span class="toc-text">Java 设计模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Servlet"><span class="toc-text">Servlet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSH"><span class="toc-text">SSH</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSM"><span class="toc-text">SSM</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SpringBoot"><span class="toc-text">SpringBoot</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#最近都在忙啥"><span class="toc-text">最近都在忙啥</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#女生节"><span class="toc-text">女生节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目任务"><span class="toc-text">项目任务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目申报"><span class="toc-text">项目申报</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#春招面试"><span class="toc-text">春招面试</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#面试感受"><span class="toc-text">面试感受</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#百度学长的指导"><span class="toc-text">百度学长的指导</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#腾讯面试总结"><span class="toc-text">腾讯面试总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字节面试总结"><span class="toc-text">字节面试总结</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://5b0988e595225.cdn.sohucs.com/images/20190831/84729f5c5bb346208416445feb485df6.jpeg)"><div id="post-info"><div id="post-title"><div class="posttitle">Gossip</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2020-03-15</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Diary/">Diary</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>Word count:</span><span class="word-count">2.5k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>Reading time: 7 min</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>Post View:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><html><head></head><body><p>[TOC]</p>
+<h1 id="寒假计划"><a href="#寒假计划" class="headerlink" title="寒假计划"></a>寒假计划</h1><blockquote>
+<p>首先在上学期临近期末的时候，我给自己指定了一套寒假计划，边学边做笔记，大概从考试月就开始了，先来整理一下。</p>
+</blockquote>
+<h2 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h2><blockquote>
+<p>说来惭愧，本来我是真的想学好这个的，奈何上课时压根听不进去？后来也是一边学一边做笔记，在寒假结束前搞定了。</p>
+</blockquote>
+<h2 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h2><blockquote>
+<p>这个也是，上课压根听不进去，可能我天生就和课堂不和吧。后来在 B 站上找到严蔚敏老师的教程，不过说真的，太古老了，让我提不上什么精神，从寒假开始，数据结构也就开始，现在都还没看完，，，当然，一方面也是沉迷于其他技术，毕竟有趣多了。</p>
+</blockquote>
+<h2 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h2><blockquote>
+<p>我就不多说了吧，上课听不进，寒假找视频补的，本来想的是学了汇编之后，能够更了解程序的执行，那么据此就能写出更优质的代码，不过貌似这不是简单学一学就能做出优化的。</p>
+</blockquote>
+<h2 id="Java-设计模式"><a href="#Java-设计模式" class="headerlink" title="Java 设计模式"></a>Java 设计模式</h2><blockquote>
+<p>这个本身没有在我的计划之内，是我在学 Spring 的时候，接触到的知识点，因为以前裸刷 SpringBoot 的时候也遇到过，我意识到设计模式的重要性，后来专门找了课程进行学习，不过学习的过程中我的思想高度还不够，没能太记得住，不过在后面的课程中我感觉的确轻松了不少。</p>
+</blockquote>
+<h2 id="Servlet"><a href="#Servlet" class="headerlink" title="Servlet"></a>Servlet</h2><blockquote>
+<p>从这里开始正式进入技术性的学习了，之所以先学 Servlet 也是因为 Servlet 和 JDBC  是 Java Web 中偏底层的技术，我想只有把这个搞好，后面的学习才能更加得心应手，前面提到过裸刷 SpringBoot。现在想起来当时太天真了，居然连基础都没看，直接和 SpringBoot 刚。</p>
+</blockquote>
+<h2 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h2><blockquote>
+<p>由 Struts2 + Spring + Hibernate 组成</p>
+</blockquote>
+<h2 id="SSM"><a href="#SSM" class="headerlink" title="SSM"></a>SSM</h2><blockquote>
+<p>由 SpringMVC + Spring + Mybatis 组成</p>
+</blockquote>
+<div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand code-closed" aria-hidden="true"></i><div class="code_lang">properties</div></div><figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 好的，打住，连续的学习就到这里了，在学习下一个技术之前，还有两个小玩意儿需要提一下。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">防疫指南</span>: <span class="string">我还是太菜了，一个静态网页花了近一周才做完。反思的结果嘛，一方面的确还没有去了解过 canvas 标签，如果学了这个，应该能简单很多，但是那个设计方面的确也有不太规范的地方，还要做适配，当时的确痛不欲生。</span></span><br><span class="line"></span><br><span class="line"><span class="meta">小星留言板</span>: <span class="string">这个是星网说每个部门想几个和疫情有关的点子，于是我就做了这个留言板，一方面也是进行一下实践。使用的 SSM + Vue 框架，是我第一次体验前后端分离的 Happy</span></span><br></pre></td></tr></tbody></table></figure></div>
+
+<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><blockquote>
+<p>从把以前的框架都看了一遍，再回头来征服 SpringBoot，的确很爽，看的清清楚楚，原理也能明白。不过在看源码方面还是不行，一个不知道从哪里看起，再一个也看不懂，那都是些啥啊。后来又听说这只是十几万的价格，当时心就一凉。虽然我没有把钱看的太重，但是我是真的想要改善生活的，十几万怎么够啊。然后我就进入了长期的迷茫期。最后还是决定先把 SpringBoot 搞定再说。</p>
+</blockquote>
+<h1 id="最近都在忙啥"><a href="#最近都在忙啥" class="headerlink" title="最近都在忙啥"></a>最近都在忙啥</h1><blockquote>
+<p>在颓废期间断断续续把 SpringBoot 看得差不多了，然后做了两个项目组的页面，不过还是在督促下做的，毕竟我实在是提不起神来。</p>
+</blockquote>
+<h2 id="女生节"><a href="#女生节" class="headerlink" title="女生节"></a>女生节</h2><blockquote>
+<p>我的颓废大概一直持续到女生节之前。从女生节开始就一直忙到现在了，首先女生节的时候，因为没办法开 party，于是用 SpringBoot + Vue 框架（嘿嘿，活学活用）做了一个小网站，把大家的心愿收集了起来，同时还把男生们录的视频放在了网站上，这也是第一次把视频这种东西放在服务器上，然后从前端取出来，而且加入了很多以前没使用的机制，比如第一次登录之后，以后就只用填学号即可，每登陆一次可管15分钟不用登录，许了愿之后才能看见男生的视频。</p>
+</blockquote>
+<h2 id="项目任务"><a href="#项目任务" class="headerlink" title="项目任务"></a>项目任务</h2><blockquote>
+<p>接着女生节后的第二天，向项目组保证两周之内做完所有前端页面，现在看来怕要再加一周了。</p>
+</blockquote>
+<h2 id="项目申报"><a href="#项目申报" class="headerlink" title="项目申报"></a>项目申报</h2><blockquote>
+<p>钟老师来带我们做项目了。是一个深度学习的项目，虽然没搞过，但是我对技术都感兴趣，而我正好在迷茫过程中，既然钟老师找上门来，那自然是果断接下嘛。由于今天就截至，所以只能每天改好之后给钟老师过目一下。在这期间我强烈感受到的是团队合作的力量吧，三个小伙伴真的帮了我很多，特别是那天面试的时候，实在是没时间，但是大家也没有闲着，让我安心面试。前天我至交到了石门，找我出去玩，我说改完就出来，没想到一改就是一个半小时，后来实在没办法了，只能让小伙伴们补充一下，自己则匆匆去和至交碰面。昨天加上了大佬学长，申请书也交了，今天钟老师审核完成，这个总算是能放几天了。</p>
+</blockquote>
+<h2 id="春招面试"><a href="#春招面试" class="headerlink" title="春招面试"></a>春招面试</h2><blockquote>
+<p>因为最近春招，自己也投了几家简历，准备着面试。众所周知我是真的想早点出去实习，目前还只面试了字节跳动的，面试的详情下面再说。</p>
+</blockquote>
+<h1 id="面试感受"><a href="#面试感受" class="headerlink" title="面试感受"></a>面试感受</h1><h2 id="百度学长的指导"><a href="#百度学长的指导" class="headerlink" title="百度学长的指导"></a>百度学长的指导</h2><blockquote>
+<p>首先我是找了百度的学长，想要投 web 前端的实习生，学长给我指出了很多简历上的问题，并给我发了模板，然后我重新写了一份简历，在看到学长发的模板时，我深知自己的菜，学长发的还只是 Vue 方面的，模板中的前辈们对 Vue 的原理掌握得清清楚楚，而且看了源码，并能够做出优化，数据摆在那里就是一块敲门砖。我跟学长说我没有研究过 Vue 的原理，学长说面试肯定会问原理的，然后谢过学长便不了了之。</p>
+</blockquote>
+<h2 id="腾讯面试总结"><a href="#腾讯面试总结" class="headerlink" title="腾讯面试总结"></a>腾讯面试总结</h2><blockquote>
+<p>目前还只是投了简历，9号投的，说是一周之内处理，应该快了</p>
+</blockquote>
+<h2 id="字节面试总结"><a href="#字节面试总结" class="headerlink" title="字节面试总结"></a>字节面试总结</h2><blockquote>
+<p>首先我得说一下，这个面试来得莫名其妙，我没有投字节跳动的简历，但是那天字节的 HR 突然打电话来，问我愿不愿意去北京，能实习多久，什么时候能开始。后来又加我微信约面试时间，在这之前我没有完全相信对方是字节的 HR，不过后来定了面试时间之后收到了字节的邮件，才放下心来。</p>
+<p><strong>面试前</strong></p>
+<p>因为约的时间就是第二天下午 14 点，一天不到的时间。说真的，很紧张，在那短短的十几个小时里我看了很多面经，明显感觉得出是我没有去研究过的东西。本来想着熬夜补面经，不过最近实在是太累了，看着看着就睡着了，到了中午12点左右，越发紧张起来，想起 hy 说的，“一个年薪百万的大佬和我聊了几十分钟，我应该高兴才是”。然而我还是一样的紧张，从某方面来说，我知道我面上的机会并不大，面试失败完全是在预料之中，但是我对实习的强烈渴望告诉我，我不能错过任何机会。</p>
+<p><strong>面试中</strong></p>
+<p>很烦，我当时录了视频，但现在还没有勇气去看回放。并不是说被面试题虐得一塌糊涂，主要是我面试的时候就感觉到了我自己那强烈的紧张感，还有那极不自信，被潜意识压低的语气，让我觉得当时惨不忍睹，说白了就是没眼睛看。简单回忆一下吧：</p>
+<ul>
+<li>说一下盒子</li>
+<li>盒子的宽是怎么计算的，能改吗</li>
+<li>有没有用过 flex 布局</li>
+<li>position 的三个属性及特征</li>
+<li>写一个类（JavaScript 的），再写一个类继承它</li>
+<li>ES6 的新特性</li>
+<li>箭头函数的 this 指的是谁</li>
+<li>浏览器的缓存机制是什么</li>
+<li>有没有用过长连接</li>
+<li>有没有了解过跨域</li>
+<li>跨域的异常是谁抛出来的</li>
+</ul>
+<p>最后，分享一下面试官对我的评价：“觉得你可能太偏重于业务实现，或者是把项目做出来就行了。或者你这个项目的深度根本就不够，你前端的技术，包括 HTML，CSS，JS 还有浏览器的，跟网络设计的知识，了解的都不太好，需要去买书来系统性的学习下。比如说缓存，比如说跨域，还有跨域，这些都是和前端必备的知识。然后就是 JS，原型和原型链的继承，是你必须要了解的。”</p>
+<p><strong>面试后</strong></p>
+<p>怎么说呢，回顾面试前准备的时候，真的发现自己很多地方做得都还不是很好，面试的过程中也紧张的一批。不过怎么说呢，感觉其实面试没有想想中的那么恐怖吧，我感觉得到，下次面试腾讯的时候肯定会好很多了。第一步总是困难的嘛，剩下的日子准备针对性的去补漏洞了，就算腾讯面试失败也不要紧，通过这次面试，我感觉得到我已经成功了一半了。</p>
+</blockquote>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Cying-承影</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://cyingk.github.io/2020/03/15/Gossip/">http://cyingk.github.io/2020/03/15/Gossip/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Daily/">Daily    </a></div><div class="post_share"><div class="social-share" data-image="https://img-blog.csdnimg.cn/2020031523402253.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2020/02/26/UML/"><img class="next_cover lazyload" data-src="https://upload-images.jianshu.io/upload_images/5336514-985132f6977c5d33.png?imageMogr2/auto-orient/strip|imageView2/2/w/694/format/webp" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>UML</span></div></a></div></nav></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Cying-承影</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">自从厌倦于追寻，我已学会一觅即中；自从一股逆风袭来，我已能抗御八面来风,驾舟而行。</div><div class="icp"><a href="http://narpro.top" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"><span></span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="true" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
