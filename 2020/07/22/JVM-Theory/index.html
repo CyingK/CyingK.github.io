@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>JVM-Theory | Cying</title><meta name="description" content="JVM-Theory"><meta name="keywords" content="JVM"><meta name="author" content="Cying-承影"><meta name="copyright" content="Cying-承影"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="JVM-Theory"><meta name="twitter:description" content="JVM-Theory"><meta name="twitter:image" content="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM-logo.jpg"><meta property="og:type" content="article"><meta property="og:title" content="JVM-Theory"><meta property="og:url" content="http://cyingk.github.io/2020/07/22/JVM-Theory/"><meta property="og:site_name" content="Cying"><meta property="og:description" content="JVM-Theory"><meta property="og:image" content="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM-logo.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>JVM-Theory | Cying</title><meta name="description" content="JVM-Theory"><meta name="keywords" content="JVM"><meta name="author" content="Cying-承影"><meta name="copyright" content="Cying-承影"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="JVM-Theory"><meta name="twitter:description" content="JVM-Theory"><meta name="twitter:image" content="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM-logo.jpg"><meta property="og:type" content="article"><meta property="og:title" content="JVM-Theory"><meta property="og:url" content="http://cyingk.github.io/2020/07/22/JVM-Theory/"><meta property="og:site_name" content="Cying"><meta property="og:description" content="JVM-Theory"><meta property="og:image" content="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM-logo.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'false'
 var t = Cookies.get("theme");
 if (autoChangeMode == '1'){
 const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -128,7 +128,7 @@ function activateLightMode(){
 </li>
 </ul>
 </blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JVM架构图" class="fancybox"><img alt="JVM架构图" title="JVM架构图" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JVM架构图" class="fancybox"><img alt="JVM架构图" title="JVM架构图" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM%E6%9E%B6%E6%9E%84%E5%9B%BE.png" class="lazyload"></a></p>
 <div style="text-align: center;
             font-size: 20px; 
             margin-top: 30px;
@@ -141,7 +141,7 @@ function activateLightMode(){
 </div>
 
 
-<h2 id="二、类加载子系统"><a href="#二、类加载子系统" class="headerlink" title="二、类加载子系统"></a>二、类加载子系统</h2><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载子系统" class="fancybox"><img alt="类加载子系统" title="类加载子系统" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F.png" class="lazyload"></a></p>
+<h2 id="二、类加载子系统"><a href="#二、类加载子系统" class="headerlink" title="二、类加载子系统"></a>二、类加载子系统</h2><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载子系统" class="fancybox"><img alt="类加载子系统" title="类加载子系统" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%AD%90%E7%B3%BB%E7%BB%9F.png" class="lazyload"></a></p>
 <h3 id="2-1、简述"><a href="#2-1、简述" class="headerlink" title="2.1、简述"></a>2.1、简述</h3><blockquote>
 <ul>
 <li>类加载子系统负责从文件系统或者网络中加载 <code>Class</code> 文件，<code>Class</code> 文件在文件打头有特定的文件标识</li>
@@ -149,7 +149,7 @@ function activateLightMode(){
 <li>加载的类信息存放于一块称为方法区的内存空间。除了类的信息外，方法区中还会存放运行时常量池的信息，可能还包括字符串字面量和数字常量</li>
 </ul>
 </blockquote>
-<h3 id="2-2、类的加载过程"><a href="#2-2、类的加载过程" class="headerlink" title="2.2、类的加载过程"></a>2.2、类的加载过程</h3><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类的加载过程" class="fancybox"><img alt="类的加载过程" title="类的加载过程" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
+<h3 id="2-2、类的加载过程"><a href="#2-2、类的加载过程" class="headerlink" title="2.2、类的加载过程"></a>2.2、类的加载过程</h3><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类的加载过程" class="fancybox"><img alt="类的加载过程" title="类的加载过程" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
 <h3 id="2-3、Loading"><a href="#2-3、Loading" class="headerlink" title="2.3、Loading"></a>2.3、Loading</h3><blockquote>
 <ul>
 <li>通过一个类的全限定名获取定义此类的二进制字节流</li>
@@ -216,9 +216,9 @@ function activateLightMode(){
 <li><code>JVM</code> 支持两种类型的类加载器，分别为 <strong>引导类加载器（Bootstrap ClassLoader）</strong> 和 <strong>自定义类加载器（User-Defined ClassLoader）</strong></li>
 <li><strong>系统类加载器（Application ClassLoader）</strong> 和 <strong>扩展类加载器（Extension ClassLoader）</strong> 属于 <strong>自定义类加载器（User-Defined ClassLoader）</strong></li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A81.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载器1" class="fancybox"><img alt="类加载器1" title="类加载器1" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A81.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A81.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载器1" class="fancybox"><img alt="类加载器1" title="类加载器1" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A81.png" class="lazyload"></a></p>
 <p><strong><code>ClassLoader</code> 继承树</strong></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A82.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载器2" class="fancybox"><img alt="类加载器2" title="类加载器2" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A82.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A82.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="类加载器2" class="fancybox"><img alt="类加载器2" title="类加载器2" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A82.png" class="lazyload"></a></p>
 </blockquote>
 <h4 id="2-6-2、引导类加载器"><a href="#2-6-2、引导类加载器" class="headerlink" title="2.6.2、引导类加载器"></a>2.6.2、引导类加载器</h4><blockquote>
 <ul>
@@ -251,7 +251,7 @@ function activateLightMode(){
 </blockquote>
 <h3 id="2-7、双亲委派机制"><a href="#2-7、双亲委派机制" class="headerlink" title="2.7、双亲委派机制"></a>2.7、双亲委派机制</h3><blockquote>
 <p><code>Java</code> 虚拟机对 <code>Class</code> 文件采用的是按需加载的方式，也就是说当需要使用该类时才会将它的 <code>Class</code> 文件加载到内存生成 <code>Class</code> 对象。而且加载某个类的 <code>Class</code> 文件时，<code>Java</code> 虚拟机采用的是 <strong>双亲委派机制</strong>，即把请求交由父类处理</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="双亲委派机制" class="fancybox"><img alt="双亲委派机制" title="双亲委派机制" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="双亲委派机制" class="fancybox"><img alt="双亲委派机制" title="双亲委派机制" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.png" class="lazyload"></a></p>
 <ul>
 <li>工作原理<ul>
 <li>如果一个类加载器收到了类加载请求，它并不会自己先去加载，而是把这个请求委托给父类的加载器去执行</li>
@@ -292,9 +292,9 @@ function activateLightMode(){
 </div>
 
 
-<h2 id="三、运行时数据区"><a href="#三、运行时数据区" class="headerlink" title="三、运行时数据区"></a>三、运行时数据区</h2><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区" class="fancybox"><img alt="运行时数据区" title="运行时数据区" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" class="lazyload"></a></p>
+<h2 id="三、运行时数据区"><a href="#三、运行时数据区" class="headerlink" title="三、运行时数据区"></a>三、运行时数据区</h2><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区" class="fancybox"><img alt="运行时数据区" title="运行时数据区" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" class="lazyload"></a></p>
 <p><strong>阿里的运行时数据区：</strong></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%98%BF%E9%87%8C-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="阿里-运行时数据区" class="fancybox"><img alt="阿里-运行时数据区" title="阿里-运行时数据区" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%98%BF%E9%87%8C-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%98%BF%E9%87%8C-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="阿里-运行时数据区" class="fancybox"><img alt="阿里-运行时数据区" title="阿里-运行时数据区" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%98%BF%E9%87%8C-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA.png" class="lazyload"></a></p>
 <h3 id="3-1、PC-Register"><a href="#3-1、PC-Register" class="headerlink" title="3.1、PC Register"></a>3.1、PC Register</h3><p><a href="https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-2.html#jvms-2.5.1" target="_blank" rel="noopener">Oracle 官网介绍</a></p>
 <blockquote>
 <ul>
@@ -367,7 +367,7 @@ function activateLightMode(){
 </ul>
 </li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%88%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="栈运行原理" class="fancybox"><img alt="栈运行原理" title="栈运行原理" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%88%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%88%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="栈运行原理" class="fancybox"><img alt="栈运行原理" title="栈运行原理" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%88%E8%BF%90%E8%A1%8C%E5%8E%9F%E7%90%86.png" class="lazyload"></a></p>
 </blockquote>
 <h4 id="3-2-2、栈帧的内部结构"><a href="#3-2-2、栈帧的内部结构" class="headerlink" title="3.2.2、栈帧的内部结构"></a>3.2.2、栈帧的内部结构</h4><blockquote>
 <ul>
@@ -462,7 +462,7 @@ function activateLightMode(){
 <li>在 <code>Java</code> 源文件被编译到字节码文件中时，所有的变量和方法引用都作为符号引用保存在 <code>Class</code> 文件的常量池里。</li>
 <li>如描述一个方法调用了另外的其他方法时，就是通过常量池中的指向方法的符号来表示的，动态链接的作用就是为了将这些符号引用转换为调用方法的直接引用</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="动态链接" class="fancybox"><img alt="动态链接" title="动态链接" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="动态链接" class="fancybox"><img alt="动态链接" title="动态链接" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5.png" class="lazyload"></a></p>
 </blockquote>
 <h5 id="3-2-3-4、Return-Address"><a href="#3-2-3-4、Return-Address" class="headerlink" title="3.2.3.4、Return Address"></a>3.2.3.4、Return Address</h5><blockquote>
 <ul>
@@ -814,7 +814,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h5 id="3-4-8-3、对象分配过程"><a href="#3-4-8-3、对象分配过程" class="headerlink" title="3.4.8.3、对象分配过程"></a>3.4.8.3、对象分配过程</h5><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%AF%B9%E8%B1%A1%E5%88%86%E9%85%8D%E8%BF%87%E7%A8%8BTLAB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="对象分配过程TLAB" class="fancybox"><img alt="对象分配过程TLAB" title="对象分配过程TLAB" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%AF%B9%E8%B1%A1%E5%88%86%E9%85%8D%E8%BF%87%E7%A8%8BTLAB.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%AF%B9%E8%B1%A1%E5%88%86%E9%85%8D%E8%BF%87%E7%A8%8BTLAB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="对象分配过程TLAB" class="fancybox"><img alt="对象分配过程TLAB" title="对象分配过程TLAB" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%AF%B9%E8%B1%A1%E5%88%86%E9%85%8D%E8%BF%87%E7%A8%8BTLAB.png" class="lazyload"></a></p>
 </blockquote>
 <h4 id="3-4-9、堆空间参数设置"><a href="#3-4-9、堆空间参数设置" class="headerlink" title="3.4.9、堆空间参数设置"></a>3.4.9、堆空间参数设置</h4><blockquote>
 <ul>
@@ -890,7 +890,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="3-5、Method-Area"><a href="#3-5、Method-Area" class="headerlink" title="3.5、Method Area"></a>3.5、Method Area</h3><p><a href="https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-2.html#jvms-2.5.4" target="_blank" rel="noopener">Oracle 官网介绍</a></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E7%BB%93%E6%9E%84%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区结构图" class="fancybox"><img alt="运行时数据区结构图" title="运行时数据区结构图" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E7%BB%93%E6%9E%84%E5%9B%BE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E7%BB%93%E6%9E%84%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区结构图" class="fancybox"><img alt="运行时数据区结构图" title="运行时数据区结构图" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E7%BB%93%E6%9E%84%E5%9B%BE.png" class="lazyload"></a></p>
 <h4 id="3-5-1、堆、栈、方法区的交互关系"><a href="#3-5-1、堆、栈、方法区的交互关系" class="headerlink" title="3.5.1、堆、栈、方法区的交互关系"></a>3.5.1、堆、栈、方法区的交互关系</h4><blockquote>
 <div class="code-area-wrap"><div class="highlight-tools"><i class="fa fa-angle-down code-expand" aria-hidden="true"></i><div class="code_lang">java</div></div><figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法区  栈		堆</span></span><br><span class="line"><span class="comment">// Person person = new Person();</span></span><br></pre></td></tr></tbody></table></figure></div>
 
@@ -957,7 +957,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h4 id="3-5-3、方法区的内部结构"><a href="#3-5-3、方法区的内部结构" class="headerlink" title="3.5.3、方法区的内部结构"></a>3.5.3、方法区的内部结构</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E5%AD%98%E5%82%A8%E4%BB%80%E4%B9%88.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区存储什么" class="fancybox"><img alt="方法区存储什么" title="方法区存储什么" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E5%AD%98%E5%82%A8%E4%BB%80%E4%B9%88.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E5%AD%98%E5%82%A8%E4%BB%80%E4%B9%88.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区存储什么" class="fancybox"><img alt="方法区存储什么" title="方法区存储什么" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E5%AD%98%E5%82%A8%E4%BB%80%E4%B9%88.png" class="lazyload"></a></p>
 <ul>
 <li>用于存储已被虚拟机加载的 <strong>类型信息、常量、静态变量、即时编译器编译后的代码缓存等</strong></li>
 </ul>
@@ -1061,52 +1061,52 @@ function activateLightMode(){
 
 <ul>
 <li><p><code>Init</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B1.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例1" class="fancybox"><img alt="方法区举例1" title="方法区举例1" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B1.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B1.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例1" class="fancybox"><img alt="方法区举例1" title="方法区举例1" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B1.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step1</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例2" class="fancybox"><img alt="方法区举例2" title="方法区举例2" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B2.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B2.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例2" class="fancybox"><img alt="方法区举例2" title="方法区举例2" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B2.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step2</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例3" class="fancybox"><img alt="方法区举例3" title="方法区举例3" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B3.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例3" class="fancybox"><img alt="方法区举例3" title="方法区举例3" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B3.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step3</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例4" class="fancybox"><img alt="方法区举例4" title="方法区举例4" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B4.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例4" class="fancybox"><img alt="方法区举例4" title="方法区举例4" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B4.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step4</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B5.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例5" class="fancybox"><img alt="方法区举例5" title="方法区举例5" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B5.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B5.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例5" class="fancybox"><img alt="方法区举例5" title="方法区举例5" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B5.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step5</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例6" class="fancybox"><img alt="方法区举例6" title="方法区举例6" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B6.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例6" class="fancybox"><img alt="方法区举例6" title="方法区举例6" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B6.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step6</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B7.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例7" class="fancybox"><img alt="方法区举例7" title="方法区举例7" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B7.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B7.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例7" class="fancybox"><img alt="方法区举例7" title="方法区举例7" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B7.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step7</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例8" class="fancybox"><img alt="方法区举例8" title="方法区举例8" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例8" class="fancybox"><img alt="方法区举例8" title="方法区举例8" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B8.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step8</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B9.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例9" class="fancybox"><img alt="方法区举例9" title="方法区举例9" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B9.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B9.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例9" class="fancybox"><img alt="方法区举例9" title="方法区举例9" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B9.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step9</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B10.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例10" class="fancybox"><img alt="方法区举例10" title="方法区举例10" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B10.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B10.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例10" class="fancybox"><img alt="方法区举例10" title="方法区举例10" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B10.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step10</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B11.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例11" class="fancybox"><img alt="方法区举例11" title="方法区举例11" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B11.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B11.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例11" class="fancybox"><img alt="方法区举例11" title="方法区举例11" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B11.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step11</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B12.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例12" class="fancybox"><img alt="方法区举例12" title="方法区举例12" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B12.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B12.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例12" class="fancybox"><img alt="方法区举例12" title="方法区举例12" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B12.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step12</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B13.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例13" class="fancybox"><img alt="方法区举例13" title="方法区举例13" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B13.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B13.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例13" class="fancybox"><img alt="方法区举例13" title="方法区举例13" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B13.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step13</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B14.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例14" class="fancybox"><img alt="方法区举例14" title="方法区举例14" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B14.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B14.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例14" class="fancybox"><img alt="方法区举例14" title="方法区举例14" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B14.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step14</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B15.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例15" class="fancybox"><img alt="方法区举例15" title="方法区举例15" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B15.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B15.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例15" class="fancybox"><img alt="方法区举例15" title="方法区举例15" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B15.png" class="lazyload"></a></p>
 </li>
 <li><p><code>Step15</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B16.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例16" class="fancybox"><img alt="方法区举例16" title="方法区举例16" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B16.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B16.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法区举例16" class="fancybox"><img alt="方法区举例16" title="方法区举例16" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E5%8C%BA%E4%B8%BE%E4%BE%8B16.png" class="lazyload"></a></p>
 </li>
 </ul>
 </blockquote>
@@ -1124,15 +1124,15 @@ function activateLightMode(){
 </thead>
 <tbody><tr>
 <td><code>JDK 1.7</code> 以前</td>
-<td>有永久代 <code>(Permanent Generation)</code>，<br>静态变量存放在永久代<br><br><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK6_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK6_Method" class="fancybox"><img alt="JDK6_Method" style="zoom: 50%;" title="JDK6_Method" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK6_Method.png" class="lazyload"></a></td>
+<td>有永久代 <code>(Permanent Generation)</code>，<br>静态变量存放在永久代<br><br><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK6_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK6_Method" class="fancybox"><img alt="JDK6_Method" style="zoom: 50%;" title="JDK6_Method" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK6_Method.png" class="lazyload"></a></td>
 </tr>
 <tr>
 <td><code>JDK 1.7</code></td>
-<td>有永久代，但已经逐步 “去永久代”，字符串常量池、<br>静态变量溢出，保存在堆中<br><br><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK7_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK7_Method" class="fancybox"><img alt="JDK7_Method" style="zoom: 50%;" title="JDK7_Method" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK7_Method.png" class="lazyload"></a></td>
+<td>有永久代，但已经逐步 “去永久代”，字符串常量池、<br>静态变量溢出，保存在堆中<br><br><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK7_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK7_Method" class="fancybox"><img alt="JDK7_Method" style="zoom: 50%;" title="JDK7_Method" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK7_Method.png" class="lazyload"></a></td>
 </tr>
 <tr>
 <td><code>JDK 1.7</code> 以后</td>
-<td>无永久代，类型信息、字段、方法、常量保存在本地的<br>元空间，但字符串常量池、静态变量仍在堆<br><br><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK8_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK8_Method" class="fancybox"><img alt="JDK8_Method" style="zoom: 50%;" title="JDK8_Method" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JDK8_Method.png" class="lazyload"></a></td>
+<td>无永久代，类型信息、字段、方法、常量保存在本地的<br>元空间，但字符串常量池、静态变量仍在堆<br><br><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK8_Method.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JDK8_Method" class="fancybox"><img alt="JDK8_Method" style="zoom: 50%;" title="JDK8_Method" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/JDK8_Method.png" class="lazyload"></a></td>
 </tr>
 </tbody></table>
 </li>
@@ -1185,7 +1185,7 @@ function activateLightMode(){
 <li>在大量使用反射、动态代理、<code>CGLib</code> 等字节码框架，动态生成 <code>JSP</code> 以及 <code>OSGI</code> 这类频繁自定义类加载器的场景中，<strong>通常都需要 <code>Java</code> 虚拟机具备类型卸载的能力，以保证不会对方法区造成过大的内存压力</strong></li>
 </ul>
 </blockquote>
-<h3 id="3-6、小结"><a href="#3-6、小结" class="headerlink" title="3.6、小结"></a>3.6、小结</h3><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA-%E5%B0%8F%E7%BB%93.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区-小结" class="fancybox"><img alt="运行时数据区-小结" title="运行时数据区-小结" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA-%E5%B0%8F%E7%BB%93.png" class="lazyload"></a></p>
+<h3 id="3-6、小结"><a href="#3-6、小结" class="headerlink" title="3.6、小结"></a>3.6、小结</h3><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA-%E5%B0%8F%E7%BB%93.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="运行时数据区-小结" class="fancybox"><img alt="运行时数据区-小结" title="运行时数据区-小结" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA-%E5%B0%8F%E7%BB%93.png" class="lazyload"></a></p>
 <div style="text-align: center;
             font-size: 20px; 
             margin-top: 30px;
@@ -1198,7 +1198,7 @@ function activateLightMode(){
 </div>
 
 
-<h2 id="四、本地方法接口"><a href="#四、本地方法接口" class="headerlink" title="四、本地方法接口"></a>四、本地方法接口</h2><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%8E%A5%E5%8F%A3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="本地方法接口" class="fancybox"><img alt="本地方法接口" title="本地方法接口" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%8E%A5%E5%8F%A3.png" class="lazyload"></a></p>
+<h2 id="四、本地方法接口"><a href="#四、本地方法接口" class="headerlink" title="四、本地方法接口"></a>四、本地方法接口</h2><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%8E%A5%E5%8F%A3.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="本地方法接口" class="fancybox"><img alt="本地方法接口" title="本地方法接口" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%8E%A5%E5%8F%A3.png" class="lazyload"></a></p>
 <blockquote>
 <ul>
 <li>定义：简单地讲，<strong>一个 <code>Native Method</code> 就是一个 <code>Java</code> 调用非 <code>Java</code> 代码的接口</strong>，一个 <code>Native Method</code> 是这样的一个 <code>Java</code> 方法：该方法的实现由非 <code>Java</code> 语言实现，比如 <code>C</code>，这个特征并非 <code>Java</code> 特有，很多其他的编程语言都有这一机制，比如在 <code>C++</code> 中，就可以用 <code>extern “C”</code> 告知 <code>C++</code> 编译器去调用一个 <code>C</code> 函数<ul>
@@ -1311,9 +1311,9 @@ function activateLightMode(){
 <h4 id="5-2-3、对其填充-Padding"><a href="#5-2-3、对其填充-Padding" class="headerlink" title="5.2.3、对其填充 Padding"></a>5.2.3、对其填充 Padding</h4><blockquote>
 <p>不是必须的，也没有特别含义，仅仅起到占位符的作用</p>
 </blockquote>
-<h4 id="5-2-4、图示"><a href="#5-2-4、图示" class="headerlink" title="5.2.4、图示"></a>5.2.4、图示</h4><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80%E5%9B%BE%E7%A4%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="内存布局图示" class="fancybox"><img alt="内存布局图示" title="内存布局图示" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80%E5%9B%BE%E7%A4%BA.png" class="lazyload"></a></p>
+<h4 id="5-2-4、图示"><a href="#5-2-4、图示" class="headerlink" title="5.2.4、图示"></a>5.2.4、图示</h4><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80%E5%9B%BE%E7%A4%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="内存布局图示" class="fancybox"><img alt="内存布局图示" title="内存布局图示" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80%E5%9B%BE%E7%A4%BA.png" class="lazyload"></a></p>
 <h3 id="5-3、对象访问定位"><a href="#5-3、对象访问定位" class="headerlink" title="5.3、对象访问定位"></a>5.3、对象访问定位</h3><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E5%AE%9A%E4%BD%8D%E5%9B%BE%E7%A4%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="对象访问定位图示" class="fancybox"><img alt="对象访问定位图示" title="对象访问定位图示" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E5%AE%9A%E4%BD%8D%E5%9B%BE%E7%A4%BA.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E5%AE%9A%E4%BD%8D%E5%9B%BE%E7%A4%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="对象访问定位图示" class="fancybox"><img alt="对象访问定位图示" title="对象访问定位图示" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%AF%B9%E8%B1%A1%E8%AE%BF%E9%97%AE%E5%AE%9A%E4%BD%8D%E5%9B%BE%E7%A4%BA.png" class="lazyload"></a></p>
 <ul>
 <li><p>创建对象的目的是为了使用它</p>
 </li>
@@ -1322,10 +1322,10 @@ function activateLightMode(){
 <li><p>对象访问的两种主要方式</p>
 <ul>
 <li><p>句柄访问</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="句柄访问" class="fancybox"><img alt="句柄访问" title="句柄访问" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="句柄访问" class="fancybox"><img alt="句柄访问" title="句柄访问" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%A5%E6%9F%84%E8%AE%BF%E9%97%AE.png" class="lazyload"></a></p>
 </li>
 <li><p>直接指针</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="直接指针" class="fancybox"><img alt="直接指针" title="直接指针" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="直接指针" class="fancybox"><img alt="直接指针" title="直接指针" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%9B%B4%E6%8E%A5%E6%8C%87%E9%92%88.png" class="lazyload"></a></p>
 </li>
 </ul>
 </li>
@@ -1359,13 +1359,13 @@ function activateLightMode(){
 <ul>
 <li>读写文件，需要与磁盘交互，需要由用户态切换到内核态。在内核态时，需要内存如图所示，使用 <code>I/O</code>，需要两份内存存储重复数据，效率低</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%9D%9E%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="非直接缓冲区" class="fancybox"><img alt="非直接缓冲区" title="非直接缓冲区" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%9D%9E%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%9D%9E%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="非直接缓冲区" class="fancybox"><img alt="非直接缓冲区" title="非直接缓冲区" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%9D%9E%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" class="lazyload"></a></p>
 </blockquote>
 <h3 id="6-2、直接缓冲区"><a href="#6-2、直接缓冲区" class="headerlink" title="6.2、直接缓冲区"></a>6.2、直接缓冲区</h3><blockquote>
 <ul>
 <li>使用 <code>NIO</code> 时，如图，操作系统划出的直接缓存区可以被 <code>Java</code> 代码直接访问，只有一份。<code>NIO</code> 适合对大文件的读写操作</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="直接缓冲区" class="fancybox"><img alt="直接缓冲区" title="直接缓冲区" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="直接缓冲区" class="fancybox"><img alt="直接缓冲区" title="直接缓冲区" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%9B%B4%E6%8E%A5%E7%BC%93%E5%86%B2%E5%8C%BA.png" class="lazyload"></a></p>
 </blockquote>
 <h3 id="6-3、直接内存概述"><a href="#6-3、直接内存概述" class="headerlink" title="6.3、直接内存概述"></a>6.3、直接内存概述</h3><blockquote>
 <ul>
@@ -1380,7 +1380,7 @@ function activateLightMode(){
 <li>如果不指定，默认与堆的最大值 <code>-Xmx</code> 参数保持一致</li>
 </ul>
 </blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%847VS8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JVM内存结构7VS8" class="fancybox"><img alt="JVM内存结构7VS8" title="JVM内存结构7VS8" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%847VS8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%847VS8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="JVM内存结构7VS8" class="fancybox"><img alt="JVM内存结构7VS8" title="JVM内存结构7VS8" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%847VS8.png" class="lazyload"></a></p>
 <div style="text-align: center;
             font-size: 20px; 
             margin-top: 30px;
@@ -1393,7 +1393,7 @@ function activateLightMode(){
 </div>
 
 
-<h2 id="七、执行引擎"><a href="#七、执行引擎" class="headerlink" title="七、执行引擎"></a>七、执行引擎</h2><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎" class="fancybox"><img alt="执行引擎" title="执行引擎" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" class="lazyload"></a></p>
+<h2 id="七、执行引擎"><a href="#七、执行引擎" class="headerlink" title="七、执行引擎"></a>七、执行引擎</h2><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎" class="fancybox"><img alt="执行引擎" title="执行引擎" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" class="lazyload"></a></p>
 <h3 id="7-1、执行引擎概述"><a href="#7-1、执行引擎概述" class="headerlink" title="7.1、执行引擎概述"></a>7.1、执行引擎概述</h3><blockquote>
 <ul>
 <li><code>JVM</code> 的主要任务是负责 <strong>装载字节码到其内部</strong>，但字节码并不能够直接运行在操作系统之上，因为字节码指令并非等价于本地机器指令，它内部包含的仅仅是一些能够被 <code>JVM</code> 所识别的字节码指令、符号表，以及其他辅助信息</li>
@@ -1407,7 +1407,7 @@ function activateLightMode(){
 <li>当然，方法在执行过程中，执行引擎有可能会通过存储在局部变量表中的对象引用准确定位到存储在 <code>Java</code> 堆区中的对象实例信息以及通过对象头中的元数据指针定位到目标对象的类型信息</li>
 <li>从外观上来看，所有的 <code>Java</code> 虚拟机的执行引擎输入、输出都是一致的，输入的是字节码二进制流，处理过程是字节码解析执行的等效过程，输出的是执行结果</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎工作过程" class="fancybox"><img alt="执行引擎工作过程" title="执行引擎工作过程" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎工作过程" class="fancybox"><img alt="执行引擎工作过程" title="执行引擎工作过程" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
 </blockquote>
 <h3 id="7-2、Java-代码编译和执行的过程"><a href="#7-2、Java-代码编译和执行的过程" class="headerlink" title="7.2、Java 代码编译和执行的过程"></a>7.2、Java 代码编译和执行的过程</h3><blockquote>
 <ul>
@@ -1417,15 +1417,15 @@ function activateLightMode(){
 </ul>
 </li>
 </ul>
-<p>![Java 代码编译和执行的过程](<a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Java" target="_blank" rel="noopener">https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Java</a> 代码编译和执行的过程.png)</p>
+<p>![Java 代码编译和执行的过程](<a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Java" target="_blank" rel="noopener">https://gitee.com/CyingK/files/raw/master/images/JVM/Java</a> 代码编译和执行的过程.png)</p>
 <ul>
 <li><code>Javac</code> 前端编译器过程</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Java%E6%BA%90%E7%A0%81%E7%BA%A7%E7%BC%96%E8%AF%91%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Java源码级编译器" class="fancybox"><img alt="Java源码级编译器" title="Java源码级编译器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Java%E6%BA%90%E7%A0%81%E7%BA%A7%E7%BC%96%E8%AF%91%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Java%E6%BA%90%E7%A0%81%E7%BA%A7%E7%BC%96%E8%AF%91%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Java源码级编译器" class="fancybox"><img alt="Java源码级编译器" title="Java源码级编译器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/Java%E6%BA%90%E7%A0%81%E7%BA%A7%E7%BC%96%E8%AF%91%E5%99%A8.png" class="lazyload"></a></p>
 <ul>
 <li>后端编译器过程</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E6%B5%81%E7%A8%8B%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎流程图" class="fancybox"><img alt="执行引擎流程图" title="执行引擎流程图" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E6%B5%81%E7%A8%8B%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="执行引擎流程图" class="fancybox"><img alt="执行引擎流程图" title="执行引擎流程图" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E%E6%B5%81%E7%A8%8B%E5%9B%BE.png" class="lazyload"></a></p>
 <hr>
 <ul>
 <li>解释器：当 <code>Java</code> 虚拟机启动时会根据预定的规范 <strong>对字节码采用逐行解释的方式执行</strong>，将每条字节码文件中的内容翻译为对应平台的本地机器指令执行</li>
@@ -1440,7 +1440,7 @@ function activateLightMode(){
 </li>
 </ul>
 </blockquote>
-<h3 id="7-3、机器码、指令、汇编语言"><a href="#7-3、机器码、指令、汇编语言" class="headerlink" title="7.3、机器码、指令、汇编语言"></a>7.3、机器码、指令、汇编语言</h3><p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%81%E6%9C%BA%E5%99%A8%E6%8C%87%E4%BB%A4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="高级语言、汇编语言、机器指令" class="fancybox"><img alt="高级语言、汇编语言、机器指令" title="高级语言、汇编语言、机器指令" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%81%E6%9C%BA%E5%99%A8%E6%8C%87%E4%BB%A4.png" class="lazyload"></a></p>
+<h3 id="7-3、机器码、指令、汇编语言"><a href="#7-3、机器码、指令、汇编语言" class="headerlink" title="7.3、机器码、指令、汇编语言"></a>7.3、机器码、指令、汇编语言</h3><p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%81%E6%9C%BA%E5%99%A8%E6%8C%87%E4%BB%A4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="高级语言、汇编语言、机器指令" class="fancybox"><img alt="高级语言、汇编语言、机器指令" title="高级语言、汇编语言、机器指令" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E9%AB%98%E7%BA%A7%E8%AF%AD%E8%A8%80%E3%80%81%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E3%80%81%E6%9C%BA%E5%99%A8%E6%8C%87%E4%BB%A4.png" class="lazyload"></a></p>
 <h4 id="7-3-1、机器码"><a href="#7-3-1、机器码" class="headerlink" title="7.3.1、机器码"></a>7.3.1、机器码</h4><blockquote>
 <ul>
 <li>各种用二进制彪马方式表示的指令，叫做机器指令码。开始，人们就采用它编写程序，这就是机器语言</li>
@@ -1482,7 +1482,7 @@ function activateLightMode(){
 <li>字节码的典型应用为 <code>Java Bytecode</code></li>
 </ul>
 </blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%90%86%E8%A7%A3%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="理解执行引擎" class="fancybox"><img alt="理解执行引擎" title="理解执行引擎" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%90%86%E8%A7%A3%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" class="lazyload"></a> </p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%90%86%E8%A7%A3%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="理解执行引擎" class="fancybox"><img alt="理解执行引擎" title="理解执行引擎" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%90%86%E8%A7%A3%E6%89%A7%E8%A1%8C%E5%BC%95%E6%93%8E.png" class="lazyload"></a> </p>
 <h3 id="7-4、解释器"><a href="#7-4、解释器" class="headerlink" title="7.4、解释器"></a>7.4、解释器</h3><blockquote>
 <ul>
 <li><code>JVM</code> 设计者们的初中仅仅是单纯地 <strong>为了满足 <code>Java</code> 程序实现快平台特性</strong>，因此避免采用静态编译地方式直接生成机器指令，从而诞生了实现解释器在运行时采用逐行解释字节码执行程序地想法</li>
@@ -1563,12 +1563,12 @@ function activateLightMode(){
 </ul>
 </li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法调用计数器" class="fancybox"><img alt="方法调用计数器" title="方法调用计数器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="方法调用计数器" class="fancybox"><img alt="方法调用计数器" title="方法调用计数器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8.png" class="lazyload"></a></p>
 </li>
 <li><p>回边计数器则用于统计循环体执行的循环次数</p>
 <ul>
 <li><p>统计一个方法中 <strong>循环体代码执行的次数</strong>，在字节码中遇到控制流向后跳转的指令称为 “回边”，显然建立回边的目的就是为了触发 <code>OSR</code> 编译</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9B%9E%E8%BE%B9%E8%AE%A1%E6%95%B0%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="回边计数器" class="fancybox"><img alt="回边计数器" title="回边计数器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9B%9E%E8%BE%B9%E8%AE%A1%E6%95%B0%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9B%9E%E8%BE%B9%E8%AE%A1%E6%95%B0%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="回边计数器" class="fancybox"><img alt="回边计数器" title="回边计数器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9B%9E%E8%BE%B9%E8%AE%A1%E6%95%B0%E5%99%A8.png" class="lazyload"></a></p>
 </li>
 </ul>
 </li>
@@ -1922,7 +1922,7 @@ function activateLightMode(){
 <li><p>每次复制都需要更新计数器，伴随着加法和减法操作，增加了 <strong>时间开销</strong></p>
 </li>
 <li><p>无法处理循环引用的情况，可能出现 <strong>内存泄漏</strong></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="引用计数器内存泄漏" class="fancybox"><img alt="引用计数器内存泄漏" title="引用计数器内存泄漏" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="引用计数器内存泄漏" class="fancybox"><img alt="引用计数器内存泄漏" title="引用计数器内存泄漏" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E5%99%A8%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F.png" class="lazyload"></a></p>
 </li>
 </ul>
 </li>
@@ -1960,7 +1960,7 @@ function activateLightMode(){
 <li><p>如果目标对象没有任何引用链相连，则是不可达的，就意味着该对象已经死亡，可以标记为垃圾对象</p>
 </li>
 <li><p>在可达性分析算法中，只有能够被根对象集合直接或间接连接的对象才是存活对象</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%88%86%E6%9E%90%E7%AE%97%E6%B3%95%E7%A4%BA%E6%84%8F%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="可达性分析算法示意图" class="fancybox"><img alt="可达性分析算法示意图" title="可达性分析算法示意图" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%88%86%E6%9E%90%E7%AE%97%E6%B3%95%E7%A4%BA%E6%84%8F%E5%9B%BE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%88%86%E6%9E%90%E7%AE%97%E6%B3%95%E7%A4%BA%E6%84%8F%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="可达性分析算法示意图" class="fancybox"><img alt="可达性分析算法示意图" title="可达性分析算法示意图" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%8F%AF%E8%BE%BE%E6%80%A7%E5%88%86%E6%9E%90%E7%AE%97%E6%B3%95%E7%A4%BA%E6%84%8F%E5%9B%BE.png" class="lazyload"></a></p>
 </li>
 </ul>
 </li>
@@ -2062,7 +2062,7 @@ function activateLightMode(){
 <li>标记：<code>Collector</code> 从引用根节点开始遍历，标记所有被引用的对象。一般是在对象的 <code>Header</code> 中记录为可达对象</li>
 <li>清除：<code>Collector</code> 对堆内存从头到尾进行线性的遍历，如果发现某个对象在其 <code>Header</code> 中没有标记为可达对象，则将其回收（并非置空，而是把需要清除的对象地址保存在空闲的地址列表里。下次有新对象需要加载时，判断垃圾的位置空间是否足够，如果够，就存放）</li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%87%E8%AE%B0%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="标记清除算法" class="fancybox"><img alt="标记清除算法" title="标记清除算法" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%87%E8%AE%B0%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%87%E8%AE%B0%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="标记清除算法" class="fancybox"><img alt="标记清除算法" title="标记清除算法" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%87%E8%AE%B0%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
 </li>
 </ul>
 <hr>
@@ -2082,7 +2082,7 @@ function activateLightMode(){
 <hr>
 <ul>
 <li><p>核心思想：将活着的内存空间分为两块，每次只使用其中一块，在垃圾回收时将正在使用的内存中的存活对象复制到未被使用的内存块中，之后清除正在使用的内存块中的所有对象，交换两个内存的角色，最后完成垃圾回收</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="复制算法" class="fancybox"><img alt="复制算法" title="复制算法" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="复制算法" class="fancybox"><img alt="复制算法" title="复制算法" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%A4%8D%E5%88%B6%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
 </li>
 </ul>
 <hr>
@@ -2124,7 +2124,7 @@ function activateLightMode(){
 <li><p>将所有存活的对象压缩到内存的一段，按顺序排放</p>
 </li>
 <li><p>清理边界外所有的空间</p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%87%E8%AE%B0%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="标记压缩算法" class="fancybox"><img alt="标记压缩算法" title="标记压缩算法" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%A0%87%E8%AE%B0%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%87%E8%AE%B0%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="标记压缩算法" class="fancybox"><img alt="标记压缩算法" title="标记压缩算法" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%A0%87%E8%AE%B0%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95.png" class="lazyload"></a></p>
 </li>
 </ul>
 </li>
@@ -2391,7 +2391,7 @@ function activateLightMode(){
 <li><p><code>JDK1.2</code> 之后，<code>Java</code> 对引用的概念进行了扩充，将引用分为强引用、软引用、弱引用和虚引用，<strong>这四种引用强度依次逐渐减弱</strong></p>
 </li>
 <li><p>除强引用外，其他三种引用均可以在 <code>java.lang.ref</code> 包中找到 </p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%BC%95%E7%94%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="引用" class="fancybox"><img alt="引用" title="引用" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%BC%95%E7%94%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%BC%95%E7%94%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="引用" class="fancybox"><img alt="引用" title="引用" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%BC%95%E7%94%A8.png" class="lazyload"></a></p>
 </li>
 </ul>
 <hr>
@@ -2536,7 +2536,7 @@ function activateLightMode(){
 <li><p>这种情况下，应用程序能容忍较高的暂停时间，因此，高吞吐量的应用程序有更长的时间基准，快速响应是不必考虑的</p>
 </li>
 <li><p>吞吐量优先，意味着再单位时间内，<code>STW</code> 的时间最短 <code>0.2 + 0.2 = 0.4</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B3%A8%E9%87%8D%E5%90%9E%E5%90%90%E9%87%8F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="注重吞吐量" class="fancybox"><img alt="注重吞吐量" title="注重吞吐量" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B3%A8%E9%87%8D%E5%90%9E%E5%90%90%E9%87%8F.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B3%A8%E9%87%8D%E5%90%9E%E5%90%90%E9%87%8F.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="注重吞吐量" class="fancybox"><img alt="注重吞吐量" title="注重吞吐量" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B3%A8%E9%87%8D%E5%90%9E%E5%90%90%E9%87%8F.png" class="lazyload"></a></p>
 </li>
 </ul>
 </blockquote>
@@ -2548,7 +2548,7 @@ function activateLightMode(){
 </ul>
 </li>
 <li><p>暂停时间优先，意味着尽可能让单次 <code>STW</code> 的时间最短：<code>0.1 + 0.1 + 0.1 + 0.1 + 0.1 = 0.5</code></p>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B3%A8%E9%87%8D%E6%9A%82%E5%81%9C%E6%97%B6%E9%97%B4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="注重暂停时间" class="fancybox"><img alt="注重暂停时间" title="注重暂停时间" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B3%A8%E9%87%8D%E6%9A%82%E5%81%9C%E6%97%B6%E9%97%B4.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B3%A8%E9%87%8D%E6%9A%82%E5%81%9C%E6%97%B6%E9%97%B4.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="注重暂停时间" class="fancybox"><img alt="注重暂停时间" title="注重暂停时间" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B3%A8%E9%87%8D%E6%9A%82%E5%81%9C%E6%97%B6%E9%97%B4.png" class="lazyload"></a></p>
 </li>
 </ul>
 </blockquote>
@@ -2588,10 +2588,10 @@ function activateLightMode(){
 <li>并行回收器：<code>ParNew</code>、<code>Parallel Scavenge</code>、<code>Parallel Old</code></li>
 <li>并发回收器：<code>CMS</code>、<code>G1</code></li>
 </ul>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%BB%8F%E5%85%B8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="经典垃圾回收器" class="fancybox"><img alt="经典垃圾回收器" title="经典垃圾回收器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E7%BB%8F%E5%85%B8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%BB%8F%E5%85%B8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="经典垃圾回收器" class="fancybox"><img alt="经典垃圾回收器" title="经典垃圾回收器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E7%BB%8F%E5%85%B8%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%99%A8.png" class="lazyload"></a></p>
 </blockquote>
 <h4 id="12-2-3、七种经典垃圾收集器与垃圾分代之间的关系"><a href="#12-2-3、七种经典垃圾收集器与垃圾分代之间的关系" class="headerlink" title="12.2.3、七种经典垃圾收集器与垃圾分代之间的关系"></a>12.2.3、七种经典垃圾收集器与垃圾分代之间的关系</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%88%86%E4%BB%A3%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200719204358719" class="fancybox"><img alt="image-20200719204358719" title="image-20200719204358719" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%88%86%E4%BB%A3%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%88%86%E4%BB%A3%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="image-20200719204358719" class="fancybox"><img alt="image-20200719204358719" title="image-20200719204358719" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B8%8E%E5%9E%83%E5%9C%BE%E5%88%86%E4%BB%A3%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB.png" class="lazyload"></a></p>
 <ul>
 <li>新生代：<code>Serial</code>、<code>ParNew</code>、<code>Parallel Scavenge</code></li>
 <li>老年代：<code>Serial Old</code>、<code>Parallel Old</code>、<code>CMS</code></li>
@@ -2599,7 +2599,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h4 id="12-2-4、垃圾收集器的组合关系"><a href="#12-2-4、垃圾收集器的组合关系" class="headerlink" title="12.2.4、垃圾收集器的组合关系"></a>12.2.4、垃圾收集器的组合关系</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BB%84%E5%90%88%E5%85%B3%E7%B3%BB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="垃圾收集器之间的组合关系" class="fancybox"><img alt="垃圾收集器之间的组合关系" title="垃圾收集器之间的组合关系" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BB%84%E5%90%88%E5%85%B3%E7%B3%BB.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BB%84%E5%90%88%E5%85%B3%E7%B3%BB.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="垃圾收集器之间的组合关系" class="fancybox"><img alt="垃圾收集器之间的组合关系" title="垃圾收集器之间的组合关系" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9E%83%E5%9C%BE%E6%94%B6%E9%9B%86%E5%99%A8%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BB%84%E5%90%88%E5%85%B3%E7%B3%BB.png" class="lazyload"></a></p>
 <ul>
 <li>其中，<code>Serial Old</code> 作为 <code>CMS</code> 出现 <code>Concurrent Mode Failure</code> 失败的后背方案</li>
 <li>红色虚线：由于维护和兼容性测试的成本，在 <code>JDK 8</code> 时将 <code>Serial + CMS</code>、<code>ParNew + Serial Old</code> 这两组声明为废弃，并在 <code>JDK 9</code> 中完全取消了这些组合的支持</li>
@@ -2614,7 +2614,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="12-3、Serial-回收器：串行回收"><a href="#12-3、Serial-回收器：串行回收" class="headerlink" title="12.3、Serial 回收器：串行回收"></a>12.3、Serial 回收器：串行回收</h3><h4 id="12-3-1、概述"><a href="#12-3-1、概述" class="headerlink" title="12.3.1、概述"></a>12.3.1、概述</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Serial%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Serial收集器" class="fancybox"><img alt="Serial收集器" title="Serial收集器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Serial%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Serial%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Serial收集器" class="fancybox"><img alt="Serial收集器" title="Serial收集器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/Serial%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
 <ul>
 <li><code>Serial</code> 收集器是最基本、历史最悠久的垃圾收集器，<code>JDK 1.3</code> 之前回收新生代唯一的选择</li>
 <li><code>Serial</code> 收集器作为 <code>HotSpot</code> 中 <code>client</code> 模式下的默认新生代垃圾收集器</li>
@@ -2639,7 +2639,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="12-4、ParNew-回收器：并行回收"><a href="#12-4、ParNew-回收器：并行回收" class="headerlink" title="12.4、ParNew 回收器：并行回收"></a>12.4、ParNew 回收器：并行回收</h3><h4 id="12-4-1、概述"><a href="#12-4-1、概述" class="headerlink" title="12.4.1、概述"></a>12.4.1、概述</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/ParNew%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="ParNew收集器" class="fancybox"><img alt="ParNew收集器" title="ParNew收集器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/ParNew%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/ParNew%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="ParNew收集器" class="fancybox"><img alt="ParNew收集器" title="ParNew收集器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/ParNew%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
 <ul>
 <li>如果说 <code>Serial GC</code> 是年轻代中的单线程垃圾收集器，那么 <code>ParNew</code> 收集器则是 <code>Serial</code> 收集器的多线程版本<ul>
 <li><code>Par</code> 是 <code>Parallel</code> 的缩写，<code>New</code> 表示只能处理新生代</li>
@@ -2662,7 +2662,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="12-5、Parallel-回收器：吞吐量优先"><a href="#12-5、Parallel-回收器：吞吐量优先" class="headerlink" title="12.5、Parallel 回收器：吞吐量优先"></a>12.5、Parallel 回收器：吞吐量优先</h3><h4 id="12-5-1、概述"><a href="#12-5-1、概述" class="headerlink" title="12.5.1、概述"></a>12.5.1、概述</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Parallel%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Parallel收集器" class="fancybox"><img alt="Parallel收集器" title="Parallel收集器" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Parallel%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Parallel%E6%94%B6%E9%9B%86%E5%99%A8.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Parallel收集器" class="fancybox"><img alt="Parallel收集器" title="Parallel收集器" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/Parallel%E6%94%B6%E9%9B%86%E5%99%A8.png" class="lazyload"></a></p>
 <ul>
 <li><p><code>HotSpot</code> 的年轻代中除了拥有 <code>ParNew</code> 收集器是基于并行回收的以外，<code>Parallel Scavenge</code> 收集器同样也采用了 <strong>复制算法</strong>、<strong>并行回收</strong> 和 <strong><code>Stop-The-World</code></strong> 机制</p>
 </li>
@@ -2723,7 +2723,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="12-6、CMS-回收器：低延迟"><a href="#12-6、CMS-回收器：低延迟" class="headerlink" title="12.6、CMS 回收器：低延迟"></a>12.6、CMS 回收器：低延迟</h3><h4 id="12-6-1、概述"><a href="#12-6-1、概述" class="headerlink" title="12.6.1、概述"></a>12.6.1、概述</h4><blockquote>
-<p>![CMS 收集器](<a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/CMS" target="_blank" rel="noopener">https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/CMS</a> 收集器.png)</p>
+<p>![CMS 收集器](<a href="https://gitee.com/CyingK/files/raw/master/images/JVM/CMS" target="_blank" rel="noopener">https://gitee.com/CyingK/files/raw/master/images/JVM/CMS</a> 收集器.png)</p>
 <ul>
 <li>在 <code>JDK 1.5</code> 时期，<code>HotSpot</code> 推出了一款在 <strong>强交互应用</strong> 中几乎可认为有划时代意义的垃圾收集器：<code>CMS(Concurrent-Mark-Sweep)</code> 收集器，<strong>这款收集器是 <code>HotSpot</code> 虚拟机中第一款真正意义上的并发收集器，它第一次实现了让垃圾收集线程与用户线程同时工作</strong></li>
 <li><code>CMS</code> 收集器的关注点是尽可能缩短垃圾收集时用户线程的停顿时间。停顿时间越短就越是和与用户交互的程序，良好的响应速度能提升用户体验<ul>
@@ -2890,7 +2890,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h4 id="12-8-6、Region"><a href="#12-8-6、Region" class="headerlink" title="12.8.6、Region"></a>12.8.6、Region</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Region.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Region" class="fancybox"><img alt="Region" title="Region" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Region.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Region.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="Region" class="fancybox"><img alt="Region" title="Region" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/Region.png" class="lazyload"></a></p>
 <ul>
 <li>使用 <code>G1</code> 收集器时，它将整个 <code>Java</code> 堆划分成为约 <code>2048</code> 个大小相同的独立 <code>Region</code> 块，每个 <code>Region</code> 块大小根据堆空间的实际大小而定，整体被控制在 <code>1MB</code> 到 <code>32MB</code> 之间，且为 <code>2</code> 的次幂，即 <code>1MB, 2MB, 4MB, 8MB, 16MB, 32MB</code>，可以通过 <code>-XX:G1HeapRegionSize</code> 进行设置，<strong>所有的 <code>Region</code> 大小相同，且在 <code>JVM</code> 生命周期内不会改变</strong></li>
 <li>虽然还保留有新生代和老年代的概念，但新生代和老年代已经不再是物理隔离的了，它们都是一部分 <code>Region</code> 的集合，通过 <code>Region</code> 的动态分配方式实现逻辑上的连续</li>
@@ -2902,7 +2902,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h4 id="12-8-7、回收过程"><a href="#12-8-7、回收过程" class="headerlink" title="12.8.7、回收过程"></a>12.8.7、回收过程</h4><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9B%9E%E6%94%B6%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="回收过程" class="fancybox"><img alt="回收过程" title="回收过程" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E5%9B%9E%E6%94%B6%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9B%9E%E6%94%B6%E8%BF%87%E7%A8%8B.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="回收过程" class="fancybox"><img alt="回收过程" title="回收过程" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E5%9B%9E%E6%94%B6%E8%BF%87%E7%A8%8B.png" class="lazyload"></a></p>
 <ul>
 <li>主要包括 <strong>年轻代</strong>、<strong>并发标记过程</strong>、<strong>混合回收</strong> 三个环节（如果需要，单线程、独占式、高强度的 <code>Full GC</code> 还是继续存在的，它针对 <code>GC</code> 的评估失败提供了一种失败保护机制，即强力回收</li>
 </ul>
@@ -2917,7 +2917,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h5 id="12-8-7-1、Remembered-Set"><a href="#12-8-7-1、Remembered-Set" class="headerlink" title="12.8.7.1、Remembered Set"></a>12.8.7.1、Remembered Set</h5><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/RSet.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="RSet" class="fancybox"><img alt="RSet" title="RSet" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/RSet.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/RSet.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="RSet" class="fancybox"><img alt="RSet" title="RSet" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/RSet.png" class="lazyload"></a></p>
 <ul>
 <li>一个对象被不同区域引用的问题</li>
 <li>一个 <code>Region</code> 不可能是孤立的，一个 <code>Region</code> 中的对象可能被其他任意 <code>Region</code> 中的对象引用，判断对象存活时是否需要扫描整个 <code>Java</code> 堆才能保证准确？</li>
@@ -2939,7 +2939,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h5 id="12-8-7-2、年轻代-GC"><a href="#12-8-7-2、年轻代-GC" class="headerlink" title="12.8.7.2、年轻代 GC"></a>12.8.7.2、年轻代 GC</h5><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/YoungGC.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="YoungGC" class="fancybox"><img alt="YoungGC" title="YoungGC" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/YoungGC.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/YoungGC.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="YoungGC" class="fancybox"><img alt="YoungGC" title="YoungGC" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/YoungGC.png" class="lazyload"></a></p>
 <ul>
 <li><code>JVM</code> 启动时，<code>G1</code> 先准备好 <code>Eden</code> 区，程序在运行过程中不断创建对象到 <code>Eden</code> 区，当 <code>Eden</code> 区空间耗尽，<code>G1</code> 会启动一次年轻代垃圾回收过程</li>
 <li><strong>年轻代垃圾回收只会回收 <code>Eden</code> 和 <code>Survivor</code></strong></li>
@@ -2972,7 +2972,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h5 id="12-8-7-4、混合回收"><a href="#12-8-7-4、混合回收" class="headerlink" title="12.8.7.4、混合回收"></a>12.8.7.4、混合回收</h5><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B7%B7%E5%90%88%E5%9B%9E%E6%94%B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="混合回收" class="fancybox"><img alt="混合回收" title="混合回收" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/%E6%B7%B7%E5%90%88%E5%9B%9E%E6%94%B6.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B7%B7%E5%90%88%E5%9B%9E%E6%94%B6.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="混合回收" class="fancybox"><img alt="混合回收" title="混合回收" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/%E6%B7%B7%E5%90%88%E5%9B%9E%E6%94%B6.png" class="lazyload"></a></p>
 <ul>
 <li>当越来越多的对象晋升到老年代时，为了避免堆内存被耗尽，虚拟机会触发一个混合的垃圾回收器，也就是我们的 <code>Mixed GC</code>，该算法并不是一个 <code>Old GC</code> 除了回收整个 <code>Young Region</code>，还会回收一部分的 <code>Old Region</code> 这里需要注意：是一部分老年代，而不是全部老年代，可以选择哪些 <code>Old Region</code> 进行收集，从而可以对垃圾回收的耗时时间进行控制，也需要注意的是 <code>Mixed GC</code> 并不是 <code>Full GC</code></li>
 </ul>
@@ -3017,7 +3017,7 @@ function activateLightMode(){
 </ul>
 </blockquote>
 <h3 id="12-9、垃圾回收器总结"><a href="#12-9、垃圾回收器总结" class="headerlink" title="12.9、垃圾回收器总结"></a>12.9、垃圾回收器总结</h3><blockquote>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/GC%E6%80%BB%E6%88%AA%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="GC总截图" class="fancybox"><img alt="GC总截图" title="GC总截图" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/GC%E6%80%BB%E6%88%AA%E5%9B%BE.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/GC%E6%80%BB%E6%88%AA%E5%9B%BE.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="GC总截图" class="fancybox"><img alt="GC总截图" title="GC总截图" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/GC%E6%80%BB%E6%88%AA%E5%9B%BE.png" class="lazyload"></a></p>
 </blockquote>
 <h4 id="12-9-1、如何选择垃圾回收器"><a href="#12-9-1、如何选择垃圾回收器" class="headerlink" title="12.9.1、如何选择垃圾回收器"></a>12.9.1、如何选择垃圾回收器</h4><blockquote>
 <ul>
@@ -3075,9 +3075,9 @@ function activateLightMode(){
 <li>使用 <code>G1</code> 的话，会显示 <code>Garbage-First Heap</code> </li>
 </ul>
 <hr>
-<p><a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/MinorGC%E6%97%A5%E5%BF%97.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="MinorGC日志" class="fancybox"><img alt="MinorGC日志" title="MinorGC日志" data-src="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/MinorGC%E6%97%A5%E5%BF%97.png" class="lazyload"></a></p>
+<p><a href="https://gitee.com/CyingK/files/raw/master/images/JVM/MinorGC%E6%97%A5%E5%BF%97.png" target="_blank" rel="noopener" data-fancybox="group" data-caption="MinorGC日志" class="fancybox"><img alt="MinorGC日志" title="MinorGC日志" data-src="https://gitee.com/CyingK/files/raw/master/images/JVM/MinorGC%E6%97%A5%E5%BF%97.png" class="lazyload"></a></p>
 <hr>
-<p>![Full GC日志](<a href="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Full" target="_blank" rel="noopener">https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/Full</a> GC日志.png)</p>
+<p>![Full GC日志](<a href="https://gitee.com/CyingK/files/raw/master/images/JVM/Full" target="_blank" rel="noopener">https://gitee.com/CyingK/files/raw/master/images/JVM/Full</a> GC日志.png)</p>
 </blockquote>
 <h3 id="12-11、垃圾回收器的新发展"><a href="#12-11、垃圾回收器的新发展" class="headerlink" title="12.11、垃圾回收器的新发展"></a>12.11、垃圾回收器的新发展</h3><blockquote>
 <ul>
@@ -3111,4 +3111,4 @@ function activateLightMode(){
         >>FINISH<<
     </span>
 </div>
-</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Cying-承影</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://cyingk.github.io/2020/07/22/JVM-Theory/">http://cyingk.github.io/2020/07/22/JVM-Theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JVM/">JVM    </a></div><div class="post_share"><div class="social-share" data-image="https://gitee.com/CyingK/SC-Typora-Images/raw/master/img/JVM/JVM-logo.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/08/06/Linux-And-Docker/"><img class="prev_cover lazyload" data-src="https://img-blog.csdnimg.cn/202008061653587.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>SpringCloud With Docker</span></div></a></div><div class="next-post pull_right"><a href="/2020/05/05/SpringCloud/"><img class="next_cover lazyload" data-src="http://img3.imgtn.bdimg.com/it/u=1799420697,1254911040&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>SpringCloud</span></div></a></div></nav></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Cying-承影</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">自从厌倦于追寻，我已学会一觅即中；自从一股逆风袭来，我已能抗御八面来风,驾舟而行。</div><div class="icp"><a href="http://narpro.top" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"><span></span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="true" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
+</body></html></div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Cying-承影</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://cyingk.github.io/2020/07/22/JVM-Theory/">http://cyingk.github.io/2020/07/22/JVM-Theory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JVM/">JVM    </a></div><div class="post_share"><div class="social-share" data-image="https://gitee.com/CyingK/files/raw/master/images/JVM/JVM-logo.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/08/06/Linux-And-Docker/"><img class="prev_cover lazyload" data-src="https://img-blog.csdnimg.cn/202008061653587.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>SpringCloud With Docker</span></div></a></div><div class="next-post pull_right"><a href="/2020/05/05/SpringCloud/"><img class="next_cover lazyload" data-src="http://img3.imgtn.bdimg.com/it/u=1799420697,1254911040&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>SpringCloud</span></div></a></div></nav></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2020 By Cying-承影</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">自从厌倦于追寻，我已学会一觅即中；自从一股逆风袭来，我已能抗御八面来风,驾舟而行。</div><div class="icp"><a href="http://narpro.top" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"><span></span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/fireworks.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script id="ribbon_piao" mobile="true" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
