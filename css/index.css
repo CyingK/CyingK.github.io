@@ -1363,12 +1363,12 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Lato, Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Metropolis, sans-serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
   height: 8px;
 }
 *::-webkit-scrollbar-thumb {
@@ -1453,6 +1453,13 @@ a {
 }
 a:hover {
   color: #49b1f5;
+}
+#site-title,
+#site-subtitle,
+#site-name,
+#aside-content .author-info__name,
+#aside-content .author-info__description {
+  font-family: Metropolis, sans-serif;
 }
 .is-center {
   text-align: center;
@@ -1668,7 +1675,7 @@ blockquote footer cite:before {
 #article-container pre,
 #article-container code {
   font-size: 14px;
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: Consolas, 'Courier New', monospace !important;
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
